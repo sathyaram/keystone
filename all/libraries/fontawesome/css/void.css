@@ -1,0 +1,1569 @@
+/*
+=====================================================================================
+RESET
+=====================================================================================
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+=====================================================================================
+FONTS
+=====================================================================================
+*/
+@import url(https://fonts.googleapis.com/css?family=Exo:400,500,600,700,800,300,200);
+
+@font-face {
+    font-family: 'aquaticolight';
+    src: url('../fonts/aquatico-light-webfont.eot');
+    src: url('../fonts/aquatico-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aquatico-light-webfont.woff2') format('woff2'),
+         url('../fonts/aquatico-light-webfont.woff') format('woff'),
+         url('../fonts/aquatico-light-webfont.ttf') format('truetype'),
+         url('../fonts/aquatico-light-webfont.svg#aquaticolight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aquaticolight_oblique';
+    src: url('../fonts/aquatico-lightoblique-webfont.eot');
+    src: url('../fonts/aquatico-lightoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aquatico-lightoblique-webfont.woff2') format('woff2'),
+         url('../fonts/aquatico-lightoblique-webfont.woff') format('woff'),
+         url('../fonts/aquatico-lightoblique-webfont.ttf') format('truetype'),
+         url('../fonts/aquatico-lightoblique-webfont.svg#aquaticolight_oblique') format('svg');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aquaticooblique';
+    src: url('../fonts/aquatico-oblique-webfont.eot');
+    src: url('../fonts/aquatico-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aquatico-oblique-webfont.woff2') format('woff2'),
+         url('../fonts/aquatico-oblique-webfont.woff') format('woff'),
+         url('../fonts/aquatico-oblique-webfont.ttf') format('truetype'),
+         url('../fonts/aquatico-oblique-webfont.svg#aquaticooblique') format('svg');
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aquaticoregular';
+    src: url('../fonts/aquatico-regular-webfont.eot');
+    src: url('../fonts/aquatico-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aquatico-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aquatico-regular-webfont.woff') format('woff'),
+         url('../fonts/aquatico-regular-webfont.ttf') format('truetype'),
+         url('../fonts/aquatico-regular-webfont.svg#aquaticoregular') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+/*
+=====================================================================================
+KEYFRAMES
+=====================================================================================
+*/
+
+@-webkit-keyframes in {
+    from {
+        transform:translateX(0);
+    }
+
+    to {
+        transform:translateX(-10%);
+    }
+}
+
+@-webkit-keyframes out {
+    from {
+        transform:translateX(-10%);
+    }
+
+    to {
+        transform:translateX(0);
+    }
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #6FCCDD, 
+                 0 0 20px #6FCCDD, 
+                 0 0 30px #6FCCDD, 
+                 0 0 40px #6FCCDD, 
+                 0 0 70px #6FCCDD, 
+                 0 0 80px #6FCCDD, 
+                 0 0 100px #6FCCDD, 
+                 0 0 150px #6FCCDD;
+  }
+  to {
+    text-shadow: 0 0 5px #6FCCDD, 
+                 0 0 10px #6FCCDD, 
+                 0 0 15px #6FCCDD, 
+                 0 0 20px #6FCCDD, 
+                 0 0 35px #6FCCDD, 
+                 0 0 40px #6FCCDD, 
+                 0 0 50px #6FCCDD, 
+                 0 0 75px #6FCCDD;
+  }
+}
+
+@-moz-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #6FCCDD, 
+                 0 0 20px #6FCCDD, 
+                 0 0 30px #6FCCDD, 
+                 0 0 40px #6FCCDD, 
+                 0 0 70px #6FCCDD, 
+                 0 0 80px #6FCCDD, 
+                 0 0 100px #6FCCDD,
+                 0 0 150px #6FCCDD;
+  }
+  to {
+    text-shadow: 0 0 5px #6FCCDD, 
+                 0 0 10px #6FCCDD, 
+                 0 0 15px #6FCCDD, 
+                 0 0 20px #6FCCDD, 
+                 0 0 35px #6FCCDD, 
+                 0 0 40px #6FCCDD, 
+                 0 0 50px #6FCCDD, 
+                 0 0 75px #6FCCDD;
+  }
+
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #6FCCDD, 
+                 0 0 20px #6FCCDD, 
+                 0 0 30px #6FCCDD,
+                 0 0 40px #6FCCDD, 
+                 0 0 70px #6FCCDD, 
+                 0 0 80px #6FCCDD, 
+                 0 0 100px #6FCCDD, 
+                 0 0 150px #6FCCDD;
+  }
+  to {
+    text-shadow: 0 0 5px #6FCCDD, 
+                 0 0 10px #6FCCDD, 
+                 0 0 15px #6FCCDD, 
+                 0 0 20px #6FCCDD, 
+                 0 0 35px #6FCCDD, 
+                 0 0 40px #6FCCDD, 
+                 0 0 50px #6FCCDD, 
+                 0 0 75px #6FCCDD;
+  }
+}
+
+/*
+=====================================================================================
+GENERAL CSS
+=====================================================================================
+*/
+
+.field .field-label {
+	font-weight:400;
+	padding-bottom: 10px;
+    color: #D6D6D6;
+    font-size: 15px;
+    text-align: center;
+}
+
+.visually-hidden,.skip-link__wrapper {
+  display:none;
+}
+
+
+body {
+	  font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    font-size:24px;
+}
+
+.front #page-title {
+    display: none;
+}
+
+#block-menu-block-1 .active-trail {
+    color: white !important;
+    text-shadow: 1px 1px 19px rgba(255, 255, 255, 1);
+}
+
+#block-menu-block-2 .active-trail {
+    color: #0E0F18 !important;
+    background-color:white;
+}
+
+h1, h2 {
+    font-size:56px;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height:110%;
+    width: 100%;
+    text-decoration: none;
+    
+}
+
+h3 {
+    
+}
+
+h4 {
+    color: #0E0F18;
+    font-size: 20px;
+    font-weight: 300;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 150%;
+}
+
+
+h5 {
+    font-size:18px;
+    font-weight:400;
+}
+
+/*
+=====================================================================================
+ICONS
+=====================================================================================
+*/
+
+#social-media-menu {
+    position: absolute;
+    right: 30px;
+    width: 22px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+}
+
+i.fa.fa-dribbble {
+    color:#C0B5D3;
+    transition: all .2s;
+}
+
+i.fa.fa-dribbble:hover {
+    color: #ea4c89;
+}
+
+i.fa.fa-instagram {
+    color:#C0B5D3;
+    transition: all .2s;
+}
+
+i.fa.fa-instagram:hover {
+    color: #f2f2f2;
+}
+
+
+/*
+=====================================================================================
+ABOUT
+=====================================================================================
+*/
+
+body.section-about {
+	background: linear-gradient(
+      rgba(16, 5, 25, 0.6), 
+      rgba(16, 5, 25, 0.6)
+    ), url('http://sathyaram.com/sites/default/files/RAM_8412_0-w2500.jpg') top center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: #B4B4CC;
+    
+}
+
+body.section-about #main {
+    height: 100vh;
+    text-align: center;
+}
+
+body.section-about #page-title {
+    padding-bottom: 30px;
+}
+
+body.section-about .field-name-field-description {
+  font-size:20px;
+  padding:30px 0px;
+  font-weight: 500;
+  line-height:140%;
+      width: 80%;
+    margin: 0 auto;
+}
+
+body.section-about .field-name-field-description a {
+	font-weight:300;
+    color: white;
+    text-decoration: none;
+}
+/*
+=====================================================================================
+MAINTENCE PAGE
+=====================================================================================
+*/
+
+
+.maintenance-page #main {
+	display:table;
+	margin: 0 auto;
+
+}
+
+
+.maintenance-page #content {
+	display: table-cell;
+    vertical-align: middle;
+    height: 100vh;
+    text-align: center;
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    color:purple;
+}
+
+.maintenance-page #name {
+	-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(5deg);
+    margin-top: 300px;
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.logged-in #overlay {
+    top: 30px;
+}
+
+
+/*
+=====================================================================================
+FRONTPAGE
+=====================================================================================
+*/
+
+
+/*----Base CSS----*/
+div#block-views-frontpage-projects-block .views-row {
+    height:500px;
+    /*display:flex;
+    flex-direction:column;
+    justify-content: center;*/
+    box-sizing:border-box;
+    padding:0px 5%;
+
+}
+
+#block-views-frontpage-projects-block .views-row .views-field-title a {
+    font-size:56px;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-decoration: none;
+    text-shadow: 3px 3px 18px rgba(0, 0, 0, 0.73);
+}
+
+#block-views-frontpage-projects-block .views-row .views-field-field-focus {
+    font-size: 20px;
+    font-weight: 300;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 120%;
+    
+}
+
+#block-views-frontpage-projects-block .views-field-nothing span.field-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+
+#frontpage-wrapper {
+  padding: 2%;
+    box-sizing: border-box;
+}
+
+#block-views-frontpage-projects-block .views-row .views-field-field-frontpage-foreground-photo img {
+    -webkit-box-shadow: 10px 10px 36px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 36px 5px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 36px 5px rgba(0,0,0,0.75);
+}
+
+
+/*----Macgradys Project----*/
+#block-views-frontpage-projects-block .views-row-1 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url('http://sathyaram.com/sites/default/files/macgradysburger.jpg') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#block-views-frontpage-projects-block .views-row-1 .views-field-title a {
+    color: #f7931d;
+}
+#block-views-frontpage-projects-block .views-row-1 .views-field-field-focus {
+    color: white;
+}
+
+/*----Backyard Wedding Project----*/
+#block-views-frontpage-projects-block .views-row-7 {
+    background: linear-gradient(
+      rgba(163, 211, 156, 0.3), 
+      rgba(163, 211, 156, 0.3)
+    ), url('http://sathyaram.com/sites/default/files/_RAM7014-w1800.jpg') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#block-views-frontpage-projects-block .views-row-7 .views-field-title a {
+    color: #D1E3F9;
+}
+#block-views-frontpage-projects-block .views-row-7 .views-field-field-focus {
+    color: white;
+}
+
+/*----Paul Knakk Project----*/
+#block-views-frontpage-projects-block .views-row-2 {
+    background: linear-gradient(
+      rgba(50, 50, 68, 0.5), 
+      rgba(50, 50, 68, 0.5)
+    ), url('http://sathyaram.com/sites/default/files/paulknakk.jpg') top center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#block-views-frontpage-projects-block .views-row-2 .views-field-title a {
+    color: #C1272D;
+}
+#block-views-frontpage-projects-block .views-row-2 .views-field-field-focus {
+    color: white;
+}
+
+/*----Humans of Lehigh Project----*/
+#block-views-frontpage-projects-block .views-row-4 {
+    background: linear-gradient(
+      rgba(68, 35, 8, 0.6), 
+      rgba(68, 35, 8, 0.6)
+    ), url('http://sathyaram.com/sites/default/files/Banner.png') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#block-views-frontpage-projects-block .views-row-4 .views-field-title a {
+    color: #e8ba2b;
+}
+#block-views-frontpage-projects-block .views-row-4 .views-field-field-focus {
+    color: white;
+}
+
+
+/*----Powerhouse----*/
+#block-views-frontpage-projects-block .views-row-5 {
+    background: linear-gradient(
+      rgba(249, 196, 48, 0.2), 
+      rgba(249, 196, 48, 0.2)
+    ), url('http://sathyaram.com/sites/default/files/RAM_4988.jpg') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#block-views-frontpage-projects-block .views-row-5 .views-field-title a {
+    color: #f2f2f2;
+}
+#block-views-frontpage-projects-block .views-row-5 .views-field-field-focus {
+    color: white;
+}
+
+/*----Fusion----*/
+#block-views-frontpage-projects-block .views-row-6 {
+    background: linear-gradient(
+      rgba(166, 40, 188, 0.1), 
+      rgba(166, 40, 188, 0.1)
+    ), url('http://sathyaram.com/sites/default/files/Fusion-29-w1800.jpg') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#block-views-frontpage-projects-block .views-row-6 .views-field-title a {
+    color: orange;
+}
+#block-views-frontpage-projects-block .views-row-6 .views-field-field-focus {
+    color: white;
+}
+
+/*----SexyVitamins----*/
+#block-views-frontpage-projects-block .views-row-3 {
+    background: linear-gradient(
+      rgba(166, 40, 188, 0.1), 
+      rgba(166, 40, 188, 0.1)
+    ), url('http://sathyaram.com/sites/default/files/SexyVitB&A.png') top center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#block-views-frontpage-projects-block .views-row-3 .views-field-title a {
+    color: cyan;
+}
+#block-views-frontpage-projects-block .views-row-3 .views-field-field-focus {
+    color: white;
+}
+
+
+
+/*
+=====================================================================================
+HEADER
+=====================================================================================
+*/
+
+.midnight {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,662f90+100 */
+    background: #87e0fd; /* Old browsers */
+    background: -moz-linear-gradient(left,  #87e0fd 0%, #662f90 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #87e0fd 0%,#662f90 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #87e0fd 0%,#662f90 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#662f90',GradientType=1 ); /* IE6-9 */
+    height:10px;
+    width:100%;
+    position:fixed;
+    top:0px;
+    z-index:500;
+}
+
+
+#header {
+	width: 100%;
+	height: 80px;
+    top:10px;
+	position: fixed;
+	z-index: 500;
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: #0E0F18;
+    -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+    -moz-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+    box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+}
+/*
+a#logo {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-right: 23px;
+}
+
+#logo img {
+	width: auto;
+	height:80px;
+}
+
+#logo img:hover {
+	opacity: .7;
+	transition: all .3s;
+}
+*/
+a.header__site-link {
+	text-transform: uppercase;
+    color: #6FCCDD;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    transition: all 1s;
+}
+
+a.header__site-link:hover {
+    color:#BDE1E5;
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -moz-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+div#name-and-slogan {
+    width: 230px;
+    height: 80px;
+    display:flex;
+    align-items:center;
+    padding-left:30px;
+}
+
+
+
+
+/*
+=====================================================================================
+MAIN MENU
+=====================================================================================
+*/
+
+#block-menu-block-2 {
+        /* position: absolute; */
+    /* height: 50px; */
+    display: flex;
+    top: 80px;
+    width: 100%;
+    align-items: center;
+    background: #87e0fd;
+    background: -moz-linear-gradient(left, #87e0fd 0%, #662f90 100%);
+    background: -webkit-linear-gradient(left, #87e0fd 0%,#662f90 100%);
+    background: linear-gradient(to right, #87e0fd 0%,#662f90 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#662f90',GradientType=1 );
+    /* top: 5px; */
+    position: absolute;
+    height: 40px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%,0);
+    align-items: center;
+}
+
+#block-menu-block-2 .menu-block-wrapper {
+    margin: 0 auto;
+}
+
+#block-menu-block-2 .menu__item {
+    float: left;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing: 1px;
+    margin:0px 6px;
+
+}
+
+#block-menu-block-2 .menu__item a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 9px;
+    box-sizing:border-box;
+    display: block;
+    border: 1.5px solid white;
+}
+
+#block-menu-block-2 .menu__item a:hover {
+    color: black;
+    background-color:white;
+    transition: all .3s;
+}
+
+#block-menu-block-1 .menu__item a {
+    color: #B4B4CC;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    border-top: 1px solid #0E0F18;
+    border-bottom: 1px solid #0E0F18;
+    padding: 10px 0;
+}
+#block-menu-block-1 .menu__item a:hover {
+    color: white;
+    transition: all .3s;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 8px 0;
+}
+
+#block-menu-block-1 .menu__item {
+    float:left;
+    font-size:16px;
+    margin:0px 8px;
+    padding:15px 0px;
+    box-sizing: border-box;
+}
+
+#block-menu-block-1 {
+    top:0px;
+    position: absolute;
+    height: 80px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%,0);
+    align-items: center;
+}
+
+
+/*----Secondary Menu----*/
+#block-menu-menu-secondary-menu {
+         /* float: right; */
+    top: 0px;
+    position: absolute;
+    height: 52px;
+    display: flex;
+    /* left: 50%; */
+    right: 70px;
+    text-align: right;
+    /* transform: translate(-50%,0); */
+    align-items: center;
+    /* padding-right: 20px; */
+    padding: 0px 17px;
+    margin: 14px 0px;
+    box-sizing: border-box;
+    border-right: 1px solid #C0B5D3;
+}
+
+
+#block-menu-menu-secondary-menu .menu__item a {
+    color: #C0B5D3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:11px;
+    display:block;
+    letter-spacing: 1px;
+    padding:3px 0px;
+    
+}
+
+#block-menu-menu-secondary-menu .menu__item a:hover {
+    color: white !important;
+    text-shadow: 1px 1px 19px rgba(255, 255, 255, 1);
+}
+
+/*----Hiding 3 Other Links in Main Menu----*/
+
+#block-menu-block-3 {
+  display:none !important;
+}
+
+/*
+=====================================================================================
+MAIN
+=====================================================================================
+*/
+
+#main {
+    margin-top:130px;
+    padding:80px 100px;
+}
+
+.front #main {
+    margin-top:90px;
+    padding: 0px;
+}
+
+
+/*
+=====================================================================================
+BLOCKSIT GRID
+=====================================================================================
+*/
+
+.views-blocksit-grid img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*
+=====================================================================================
+WEB
+=====================================================================================
+*/
+
+.page-node-1 #main {
+  margin-top: 90px;
+}
+
+.section-web #main #content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.node-type-web #page-title {
+  padding:20px 20px 0px;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+
+}
+
+.node-type-web .field-name-field-focus {
+  font-size:20px;
+  font-weight:600;
+  padding: 0px 20px;
+}
+
+.node-type-web .field-name-field-site-link {
+  padding:10px 20px 20px;
+  font-weight:600;
+  font-size:18px;
+
+}
+
+.node-type-web .field-name-field-site-link a {
+  text-decoration: none;
+}
+
+.node-type-web .field-name-field-description {
+  margin: 600px 0px 0px;
+  box-sizing:border-box;
+  padding:10% 8%;
+  text-align: center;
+  font-size:24px;
+  line-height:140%;
+}
+
+.node-type-web .paragraphs-items-field-focus-insight {
+  background-color: white;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content {
+  display:table;
+  width: 100%;
+}
+
+
+.node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .paragraphs-items-field-focus-explanation {
+    height: 500px;
+    display: table-cell;
+    float: none;
+    width: 50%;
+    padding: 8%;
+    box-sizing:border-box;
+    margin: 0px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+
+.node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .paragraphs-items-field-focus-explanation .field-name-field-icon {
+  float: left;
+  height: 36px;
+  padding-right: 20px;
+}
+
+.node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .paragraphs-items-field-focus-explanation .field-name-field-focus-name {
+    height: 36px;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+.node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .paragraphs-items-field-focus-explanation .field-name-field-focus-description {
+  padding: 20px 0px 0px;
+  line-height: 120%;
+}
+
+.node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .field-name-field-focus-image {
+      display: table-cell;
+    float: none;
+    width: 50%;
+    padding: 0px 8% 0px 0px;
+    margin: 0px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .field-name-field-focus-image img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+
+.node-type-web .paragraphs-items-field-focus-explanation .field-name-field-focus-image {
+  float: right;
+  width:50%;
+  height: auto;
+}
+
+.node-type-web .field-name-field-website-screenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*----Testimonials----*/
+
+.node-type-web .paragraphs-items-field-testimonial {
+  box-sizing:border-box;
+  padding:10% 8%;
+  text-align: center;
+  font-size:24px;
+  line-height:140%;
+}
+
+.node-type-web .paragraphs-items-field-testimonial .field-name-field-testimonial-quote {
+  font-weight:200;
+
+}
+
+.node-type-web .paragraphs-items-field-testimonial .field-name-field-testimonial-giver {
+  font-weight: 800;
+}
+
+
+/*----Paul Knakk----*/
+.page-node-8 #page-title {
+  color: #89191C;
+  font-size:70px;
+  text-shadow: 3px 3px 18px rgba(0, 0, 0, 0.73);
+}
+
+.page-node-8 .field-name-field-focus {
+  color: white;
+}
+
+.page-node-8 .field-name-field-site-link a {
+  color: #89191C;
+}
+
+.page-node-8 .field-name-field-description {
+  color:#89191C;
+  background-color:#f2f2f2;
+}
+
+.page-node-8 #page-title, .page-node-8 .field-name-field-focus, .page-node-8 .field-name-field-site-link {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/*----Macgradys----*/
+.page-node-9 #page-title {
+  color: #f7931d;
+  font-size:70px;
+  text-shadow: 3px 3px 18px rgba(0, 0, 0, 0.73);
+}
+
+.page-node-9 .field-name-field-focus {
+  color:white;
+}
+
+.page-node-9 .field-name-field-site-link a {
+  color: #f7931d;
+}
+
+.page-node-9 .field-name-field-description, .paragraphs-items-field-testimonial {
+  color: #f7931d;
+  background-color:#262626;
+}
+
+.page-node-9 #page-title, .page-node-9 .field-name-field-focus, .page-node-9 .field-name-field-site-link {
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+/*----Powerhouse----*/
+.page-node-10 #page-title {
+  color: #58595b;
+  font-size:70px;
+  border-top: 8px solid #DC1D6a;
+  border-right: 8px solid #F8A41C;
+  border-left: 8px solid #0599A2;
+
+}
+
+.page-node-10 .field-name-field-focus {
+  border-right: 8px solid #F8A41C;
+  border-left: 8px solid #0599A2;
+  font-weight:400;
+}
+
+.page-node-10 .field-name-field-site-link {
+  border-bottom: 8px solid #6CB744;
+  border-right: 8px solid #F8A41C;
+  border-left: 8px solid #0599A2;
+}
+
+.page-node-10 .field-name-field-site-link a {
+  color: #58595b;
+  font-weight:500;
+  font-size:20px;
+  
+}
+
+.page-node-10 .field-name-field-description, .page-node-10 .paragraphs-items-field-testimonial {
+  color: #58595b;
+  background-color: rgba(255,255,255,0.9);
+  border-top: 10px solid #DC1D6a;
+  border-right: 10px solid #F8A41C;
+  border-bottom: 10px solid #6CB744;
+  border-left: 10px solid #0599A2;
+  box-sizing:border-box;
+}
+
+.page-node-10 #page-title, .page-node-10 .field-name-field-focus, .page-node-10 .field-name-field-site-link {
+  background-color: rgba(255,255,255,0.9);
+}
+
+/*----Fusion----*/
+.page-node-11 #page-title {
+  color: #58595b;
+  font-size:70px;
+  color: orange;
+
+}
+
+.page-node-10 .field-name-field-focus {
+  font-weight:500;
+}
+
+.page-node-10 .field-name-field-site-link {
+
+}
+
+.page-node-11 .field-name-field-site-link a {
+  color: orange;
+  
+}
+
+.page-node-11 .field-name-field-description, .page-node-11 .paragraphs-items-field-testimonial {
+  color: orange;
+  background-color: rgba(255,255,255,0.9);
+  box-sizing:border-box;
+}
+
+.page-node-11 #page-title, .page-node-11 .field-name-field-focus, .page-node-11 .field-name-field-site-link {
+  background-color: rgba(255,255,255,0.9);
+}
+
+
+
+/*
+=====================================================================================
+WEB BLOCK
+=====================================================================================
+*/
+
+#block-views-web-block {
+  overflow:hidden;
+}
+
+#block-views-web-block .views-row .views-field-field-background-photo {
+  width: 30%;
+  height: auto;
+  float:left;
+
+}
+
+
+#block-views-web-block .views-row .views-field-field-background-photo img {
+  width: 100%;
+  height: auto;
+}
+
+
+#block-views-web-block .views-row .web-wrapper {
+  float: left;
+  width: 70%;
+      padding: 30px;
+    box-sizing: border-box;
+}
+
+#block-views-web-block .views-row .web-wrapper a {
+  text-decoration: none;
+  color: #5F427D;
+  transition: all 0.3s;
+}
+
+#block-views-web-block .views-row .web-wrapper a:hover {
+  color: #C0B5D3;
+}
+
+#block-views-web-block .views-row .views-field-field-focus {
+  font-size:18px;
+  padding:5px 0px 10px;
+}
+
+#block-views-web-block .views-row {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid purple;
+}
+
+
+#block-views-web-block .views-row span.field-content {
+  display:flex;
+  align-items: center;
+}
+/*
+=====================================================================================
+PHOTOGRAPHY
+=====================================================================================
+*/
+
+.node-photography .field-name-field-focus {
+  font-weight:400;
+}
+
+.section-photography .field-name-field-description {
+  font-size:20px;
+  padding:30px 0px;
+  font-weight: 200;
+  line-height:140%;
+}
+
+
+/*
+=====================================================================================
+GRAPHIC
+=====================================================================================
+*/
+.node-type-graphic #main #content {
+	max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.node-type-graphic .field-name-field-description {
+	font-weight:400;
+	font-size:18px;
+	line-height:150%;
+	width: 90%;
+}
+
+.node-type-graphic .paragraphs-item-graphic-project-bundle{
+    	padding: 50px 0px;
+    	border-bottom:1px solid #999999;
+    }
+
+
+
+.node-type-graphic .paragraphs-items-field-graphic-project .field-name-field-graphic-project .field-items .entity.entity-paragraphs-item.paragraphs-item-graphic-project-bundle .content {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.node-type-graphic .paragraphs-items-field-graphic-project .field-name-field-graphic-project .field-items .entity.entity-paragraphs-item.paragraphs-item-graphic-project-bundle .paragraphs-item-graphic-project .content{
+	display: initial !important;
+}
+
+
+
+.node-type-graphic .paragraphs-items-field-graphic-project-text {
+	width: 50%;
+	overflow:hidden;
+}
+
+.node-type-graphic .paragraphs-items-field-graphic-project-images {
+	width: 50%;
+	overflow:hidden;
+	padding-left: 5%;
+    box-sizing: border-box;
+}
+
+
+.node-type-graphic .field-name-field-graphic-project-title {
+	font-size:28px;
+	font-weight:600;
+	    padding: 0px 0px 20px;
+	
+}
+
+.node-type-graphic .field-name-field-graphic-project-descriptio {
+	font-size: 18px;
+	font-weight:200;
+	line-height:140%;
+	padding:10px 0px;
+	
+
+}
+
+.node-type-graphic .field-name-field-graphic-project-main-photo {
+	width: 80%;
+	float:left;
+}
+
+.node-type-graphic .field-name-field-graphic-project-main-photo img {
+	width: 100%;
+	height: auto;
+}
+
+.node-type-graphic .field-name-field-graphic-project-photos {
+	width: 20%;
+	float:left;
+}
+
+.node-type-graphic .field-name-field-graphic-project-photos img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*
+=====================================================================================
+GRAPHIC - POKELOGOS
+=====================================================================================
+*/
+
+.node-type-graphic img:hover {
+	opacity:.5;
+	transition: 0.5s all;
+}
+
+.section-pokélogos .field-name-field-graphic-project-main-photo {
+	width: 100%;
+	float:left;
+}
+
+.section-pokélogos .paragraphs-item-graphic-project-bundle {
+    padding: 50px 10px;
+    border-bottom: 1px solid #999999;
+    width: 48%;
+    margin: 0px 1%;
+    float: left;
+    /* min-height: 500px; */
+    box-sizing: border-box;
+}
+
+
+.section-sexyvitamins .field-name-field-graphic-project-main-photo {
+	width: 100%;
+}
+
+
+
+
+/*
+=====================================================================================
+COLORBOX
+=====================================================================================
+*/
+
+#colorbox button {
+    font-family: 'Raleway', sans-serif;
+    font-weight:400;
+}
+
+#cboxTitle {
+    font-size: 12px;
+}
+
+
+/*
+=====================================================================================
+MEAN MENU
+=====================================================================================
+*/
+
+.mean-container .mean-bar {
+        float: right;
+    position: fixed;
+    top: 25px;
+    background-color: transparent;
+    /* border-right: 1px solid white; */
+    right: 70px;
+    /* height: 52px; */
+    /* padding: 0px 17px; */
+    /* margin: 14px 0px; */
+    /* box-sizing: border-box; */
+    width:70%;
+    
+    z-index:501;
+}
+
+
+.mean-container a.meanmenu-reveal {
+    padding: 13px 18px 11px;
+    height: 26px;
+    border-right: 1px solid #C0B5D3;
+}
+
+.mean-container .mean-nav {    
+    margin-top: 61px;
+    background: #0E0F18;
+}
+
+
+.mean-container .mean-nav ul li {
+    font-size: 16px;
+}
+
+.mean-container .mean-nav ul li a {
+    text-align:right;
+    width: 80%;
+    padding: 1em 10%;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+    right:initial;
+    left:0px;
+    height:23px;
+    font-family: 'Exo';
+    font-weight: 500;
+    font-size: 26px !important;
+    
+}
+
+.mean-container a.meanmenu-reveal {
+       width: 30px;
+      padding: 10px 20px 0px 0px;
+      font-family: 'Exo';
+      font-weight: 600;
+}
+
+    
+
+.mean-container a.meanmenu-reveal span {
+      margin-top:5px;
+}
+
+a.meanmenu-reveal.meanclose {
+      padding-right: 13px;
+      padding-top: 15px;
+}
+
+
+.mean-container .mean-nav ul li:nth-child(5) a {
+    padding: 0.75em 10%;
+    font-size:12px;
+}
+
+.mean-container .mean-nav ul li:nth-child(6) a {
+    padding: 0.75em 10%;
+    font-size:12px;
+}
+
+.mean-container .mean-nav ul li:nth-child(7) a {
+    padding: .75em 10%;
+    font-size:12px;
+}
+
+
+/*
+==============================================================================================================
+MEDIA QUERIES
+==============================================================================================================
+*/
+
+@media screen and (max-width: 1000px) {
+/*---PokeLogo----*/
+	.section-pokélogos .paragraphs-item-graphic-project-bundle {
+		width: 98%;
+	}
+}
+
+@media screen and (max-width: 867px) {
+
+    /*-----Menu------*/
+    #block-menu-block-2 {
+        display:none;
+    }
+
+    #block-menu-block-1 {
+      display:none;
+    }
+
+    div#block-menu-menu-secondary-menu {
+        display:none;
+    }
+
+    #social-media-menu {
+      display:none;
+    }
+
+    #main {
+        padding:30px 15px 80px;
+        margin-top:75px;
+    }
+
+    .front #main {
+      margin-top:51px; 
+    }
+
+    h1 {
+      font-size:42px;
+    }
+
+    div#block-views-frontpage-projects-block .views-row {
+      text-align: center;
+    }
+
+    #block-views-frontpage-projects-block .views-row .views-field-title a {
+      font-size:34px;
+    }
+
+    #header {
+      height: 65px;
+    }
+    #block-views-frontpage-projects-block .views-field-nothing span.field-content {
+      flex-direction: column;
+      justify-content: center;
+  } 
+
+    .mean-container .mean-bar {
+      top: 18px;
+      right:0px;
+      width:200px;
+    }
+
+    .mean-container .mean-nav {
+      margin-top: 53px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+      border:none;
+     }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .page-photography #main {
+    margin-top:100px;
+    padding:50px 20px;
+    }
+
+    /*---Web Paragraphs Media Queries---*/
+
+    .node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .paragraphs-items-field-focus-explanation {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .node-type-web .paragraphs-items-field-focus-insight .paragraphs-item-focus-insight .content .field-name-field-focus-image {
+      width: 85%;
+      display: block;
+      margin: 0 auto 50px;
+      padding: 0px;
+    }
+
+    .node-type-web #page-title {
+      font-size:34px;
+    }
+
+    .node-type-web .field-name-field-focus {
+      font-size: 14px;
+      line-height: 110%;
+    }
+
+    .node-type-web .field-name-field-description {
+      font-size: 18px;
+    }
+
+    /*---Graphic Responsive---*/
+
+
+    .node-type-graphic .paragraphs-items-field-graphic-project .field-name-field-graphic-project .field-items .entity.entity-paragraphs-item.paragraphs-item-graphic-project-bundle .content {
+    	flex-direction:column;
+    }
+
+    .node-type-graphic .paragraphs-items-field-graphic-project .field-name-field-graphic-project .field-items .entity.entity-paragraphs-item.paragraphs-item-graphic-project-bundle .paragraphs-item-graphic-project-images .content {
+    	flex-direction: row;
+    }
+
+    .node-type-graphic .paragraphs-items-field-graphic-project-text,
+    .node-type-graphic .paragraphs-items-field-graphic-project-images {
+	width: 100%;
+	padding:0px;
+	}
+
+
+
+	.node-type-graphic .field-name-field-graphic-project-descriptio {
+		display:none;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .views-field-field-frontpage-foreground-photo {
+    display:none;
+  }
+
+
+	.field .field-label {
+		display:none;
+	}
+
+	body.section-about .field-name-field-photo-of img {
+		width:250px;
+		height: 250px;
+	}
+
+	body.section-about .field-name-field-description {
+		text-align: left;
+		font-size:16px;
+
+	}
+
+}
+
+@media screen and (max-width: 380px) {
+    a.header__site-link {
+        font-size:20px;
+        font-weight:600;
+    }
+}

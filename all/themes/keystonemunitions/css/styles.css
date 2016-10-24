@@ -1,0 +1,751 @@
+/*
+=====================================================================================
+VARIABLES
+=====================================================================================
+*/
+/*
+===
+*/
+/* line 44, ../sass/styles.scss */
+.tabs, .header__name-and-slogan, #main #page-title, #main #block-system-main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* line 66, ../sass/styles.scss */
+#block-views-shooters-block .content:after, #block-views-shooters-block-1 .content:after, .node-type-shooter .content:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/*
+===
+*/
+@font-face {
+  font-family: 'KenyanCoffee';
+  src: url("../fonts/KenyanCoffee_Normal.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'KenyanCoffee';
+  src: url("../fonts/KenyanCoffee_Bold.ttf");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'KenyanCoffee';
+  src: url("../fonts/KenyanCoffee_Italic.ttf");
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'KenyanCoffee';
+  src: url("../fonts/KenyanCoffee_BoldItalic.ttf");
+  font-style: italic;
+  font-weight: 200;
+}
+/*
+=====================================================================================
+RESET
+=====================================================================================
+*/
+/* line 113, ../sass/styles.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 135, ../sass/styles.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 139, ../sass/styles.scss */
+body {
+  line-height: 1;
+}
+
+/* line 142, ../sass/styles.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 145, ../sass/styles.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 148, ../sass/styles.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 153, ../sass/styles.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 158, ../sass/styles.scss */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 164, ../sass/styles.scss */
+p {
+  font-family: "Roboto Slab", serif;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+/* line 170, ../sass/styles.scss */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 176, ../sass/styles.scss */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'KenyanCoffee';
+  font-style: normal;
+  font-weight: 100;
+}
+
+/*
+=====================================================================================
+MISC
+=====================================================================================
+*/
+/* line 191, ../sass/styles.scss */
+.breadcrumb, .front #page-title, .not-front .header__name-and-slogan {
+  display: none;
+}
+
+/* line 196, ../sass/styles.scss */
+.tabs {
+  margin: 0 auto !important;
+  padding: 0 3% !important;
+}
+
+/*
+=====================================================================================
+SOCIAL MEDIA
+=====================================================================================
+*/
+/* line 209, ../sass/styles.scss */
+#social-media-menu {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  		/*
+  		.resume {
+  			i {
+  				font-size:24px;
+  
+  				@media screen and (max-width: $galaxys6) {
+  					font-size:16.6px !important;
+  				}
+  			}
+  		}
+  		*/
+}
+/* line 219, ../sass/styles.scss */
+#social-media-menu a {
+  display: block;
+  margin: 5px;
+  text-align: center;
+}
+/* line 226, ../sass/styles.scss */
+#social-media-menu .fa-facebook {
+  background-color: #3B5998;
+}
+/* line 230, ../sass/styles.scss */
+#social-media-menu .fa-instagram {
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+/* line 234, ../sass/styles.scss */
+#social-media-menu i {
+  font-size: 16px;
+  color: #f2f2f2;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+}
+
+/*
+=====================================================================================
+HEADER
+=====================================================================================
+*/
+/* line 264, ../sass/styles.scss */
+.header__name-and-slogan {
+  padding: 50px 20px 0;
+}
+/* line 268, ../sass/styles.scss */
+.header__name-and-slogan h1 {
+  font-size: 68px;
+  font-family: "KenyanCoffee";
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* line 275, ../sass/styles.scss */
+.header__name-and-slogan h1 a {
+  color: #fff;
+}
+/* line 282, ../sass/styles.scss */
+.header__name-and-slogan h2 {
+  color: #bbbbbb;
+  font-size: 24px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+/* line 291, ../sass/styles.scss */
+#header-wrapper {
+  background: rgba(0, 0, 0, 0.95);
+  height: 80px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+/* line 300, ../sass/styles.scss */
+#header-wrapper .region-header {
+  width: 796px;
+  position: absolute;
+  left: 50.4%;
+  z-index: 999;
+  top: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 314, ../sass/styles.scss */
+#header-wrapper a#logo {
+  position: absolute;
+  z-index: 9999;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 324, ../sass/styles.scss */
+#header-wrapper a#logo img {
+  width: 105px;
+  height: auto;
+  text-shadow: 0px 0px 10px black;
+  opacity: 1;
+}
+/* line 330, ../sass/styles.scss */
+#header-wrapper a#logo img:hover {
+  opacity: 0.8;
+}
+
+/*
+=====================================================================================
+MENU
+=====================================================================================
+*/
+/* line 345, ../sass/styles.scss */
+#block-system-main-menu li {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 800px) {
+  /* line 345, ../sass/styles.scss */
+  #block-system-main-menu li {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+  }
+}
+/* line 356, ../sass/styles.scss */
+#block-system-main-menu li a {
+  color: #f2f2f2;
+  padding: 5px 10px;
+  display: block;
+  text-align: center;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.95);
+}
+@media screen and (max-width: 800px) {
+  /* line 356, ../sass/styles.scss */
+  #block-system-main-menu li a {
+    padding: 20px 0px;
+  }
+}
+/* line 373, ../sass/styles.scss */
+#block-system-main-menu li a:hover {
+  color: #daa62c;
+  border-bottom: 1px solid #fff;
+}
+/* line 380, ../sass/styles.scss */
+#block-system-main-menu li:nth-child(4) {
+  margin-left: 150px;
+}
+@media screen and (max-width: 800px) {
+  /* line 380, ../sass/styles.scss */
+  #block-system-main-menu li:nth-child(4) {
+    margin: 0;
+  }
+}
+
+/*
+=====================================================================================
+MEAN MENU
+=====================================================================================
+*/
+/* line 395, ../sass/styles.scss */
+.mean-container .mean-bar {
+  width: 80px;
+  height: 80px;
+  background-color: #bbbbbb;
+  padding: 0;
+  z-index: 13;
+}
+
+/* line 403, ../sass/styles.scss */
+a.meanmenu-reveal.meanclose {
+  top: 10px;
+  font-weight: 400;
+  color: #111111;
+  font-family: "Roboto Slab", serif;
+}
+
+/* line 410, ../sass/styles.scss */
+.mean-container a.meanmenu-reveal span {
+  background: #111111;
+  height: 4px;
+  margin-top: 8px;
+}
+
+/* line 416, ../sass/styles.scss */
+.mean-container a.meanmenu-reveal {
+  width: 40px;
+  height: 51px;
+  padding: 17px 20px 12px;
+}
+
+/* line 422, ../sass/styles.scss */
+.mean-container .mean-nav {
+  width: 100vw;
+  margin-top: 80px;
+  background: #111111;
+  text-align: center;
+}
+
+/* line 433, ../sass/styles.scss */
+.mean-container .mean-nav ul li {
+  float: none;
+}
+
+/* line 437, ../sass/styles.scss */
+.mean-container .mean-nav ul li a {
+  width: 100%;
+}
+
+/*
+=====================================================================================
+HERO
+=====================================================================================
+*/
+/* line 448, ../sass/styles.scss */
+#hero {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15)), url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/Hero-Image.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+/* line 461, ../sass/styles.scss */
+#hero #hero-text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  -webkit-transform: translateY(-50%) rtranslateX(-50%) otate(-10deg) skew(-10deg, 0);
+  -o-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  text-shadow: 0px 0px 10px black;
+}
+/* line 473, ../sass/styles.scss */
+#hero #hero-text h2 {
+  font-size: 106px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+/* line 479, ../sass/styles.scss */
+#hero #hero-text h3 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+}
+
+/*
+=====================================================================================
+MAIN
+=====================================================================================
+*/
+/* line 492, ../sass/styles.scss */
+#main {
+  background-color: #000000;
+  background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: #fff;
+}
+/* line 498, ../sass/styles.scss */
+#main #page-title {
+  padding: 60px 20px 0;
+  text-transform: uppercase;
+  font-size: 58px;
+}
+@media screen and (max-width: 460px) {
+  /* line 498, ../sass/styles.scss */
+  #main #page-title {
+    font-size: 38px;
+  }
+}
+
+/*
+=====================================================================================
+SHOOTERS BLOCK
+=====================================================================================
+*/
+/* line 526, ../sass/styles.scss */
+#block-views-shooters-block, #block-views-shooters-block-1 {
+  background-color: #060405;
+}
+/* line 529, ../sass/styles.scss */
+#block-views-shooters-block h3, #block-views-shooters-block-1 h3 {
+  font-size: 48px;
+  font-family: "KenyanCoffee";
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+/* line 538, ../sass/styles.scss */
+#block-views-shooters-block .content, #block-views-shooters-block-1 .content {
+  max-width: 1200px;
+  padding: 50px 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 548, ../sass/styles.scss */
+#block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
+  width: 33.3333333%;
+  float: left;
+  height: auto;
+}
+@media screen and (max-width: 580px) {
+  /* line 548, ../sass/styles.scss */
+  #block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
+    width: 100%;
+  }
+}
+/* line 559, ../sass/styles.scss */
+#block-views-shooters-block .shooter-wrapper, #block-views-shooters-block-1 .shooter-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+/* line 565, ../sass/styles.scss */
+#block-views-shooters-block .shooter-wrapper:hover .name-of-person, #block-views-shooters-block-1 .shooter-wrapper:hover .name-of-person {
+  -moz-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+/* line 574, ../sass/styles.scss */
+#block-views-shooters-block .shooter-wrapper .name-of-person, #block-views-shooters-block-1 .shooter-wrapper .name-of-person {
+  position: absolute;
+  bottom: 20px;
+  font-style: italic;
+  -moz-transform: translateX(-105%);
+  -webkit-transform: translateX(-105%);
+  -o-transform: translateX(-105%);
+  -ms-transform: translateX(-105%);
+  transform: translateX(-105%);
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  background: rgba(17, 17, 17, 0.5);
+  padding: 20px;
+  width: 100%;
+}
+/* line 592, ../sass/styles.scss */
+#block-views-shooters-block .shooter-wrapper .name-of-person a, #block-views-shooters-block-1 .shooter-wrapper .name-of-person a {
+  color: #f2f2f2;
+  font-size: 24px;
+}
+
+/*
+=====================================================================================
+SHOOTERS
+=====================================================================================
+*/
+/* line 613, ../sass/styles.scss */
+.node-type-shooter .field-name-field-photo-of-shooter {
+  float: right;
+  width: 35%;
+}
+@media screen and (max-width: 800px) {
+  /* line 617, ../sass/styles.scss */
+  .node-type-shooter .field-name-field-photo-of-shooter img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 613, ../sass/styles.scss */
+  .node-type-shooter .field-name-field-photo-of-shooter {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+}
+/* line 630, ../sass/styles.scss */
+.node-type-shooter .field-name-field-description-of-shooter,
+.node-type-shooter .field-name-field-hometown-of-shooter,
+.node-type-shooter .field-name-field-homerange-of-shooter,
+.node-type-shooter .field-name-field-instagram-of-shooter,
+.node-type-shooter .field-name-field-sponsors-of-shooter,
+.node-type-shooter .field-name-field-occupation-of-shooter,
+.node-type-shooter .field-name-field-classification-of-shooter,
+.node-type-shooter .field-name-field-q-a {
+  float: left;
+  width: 60%;
+  font-family: "Roboto Slab", serif;
+  padding: 25px 0 0;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  /* line 630, ../sass/styles.scss */
+  .node-type-shooter .field-name-field-description-of-shooter,
+  .node-type-shooter .field-name-field-hometown-of-shooter,
+  .node-type-shooter .field-name-field-homerange-of-shooter,
+  .node-type-shooter .field-name-field-instagram-of-shooter,
+  .node-type-shooter .field-name-field-sponsors-of-shooter,
+  .node-type-shooter .field-name-field-occupation-of-shooter,
+  .node-type-shooter .field-name-field-classification-of-shooter,
+  .node-type-shooter .field-name-field-q-a {
+    width: 100%;
+  }
+}
+/* line 649, ../sass/styles.scss */
+.node-type-shooter .field-name-field-description-of-shooter {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  padding: 0;
+}
+/* line 655, ../sass/styles.scss */
+.node-type-shooter .field-label {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* line 664, ../sass/styles.scss */
+.node-type-shooter a {
+  color: #daa62c;
+}
+
+/*
+=====================================================================================
+ACCORDIAN
+=====================================================================================
+*/
+/* line 676, ../sass/styles.scss */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: #111111;
+  font-family: "Roboto Slab", serif;
+}
+/* line 680, ../sass/styles.scss */
+.ui-state-default a, .ui-widget-content .ui-state-default a, .ui-widget-header .ui-state-default a {
+  color: #fff !important;
+}
+
+/* line 686, ../sass/styles.scss */
+.ui-accordion .ui-accordion-header {
+  margin-top: 8px !important;
+}
+
+/*
+=====================================================================================
+WEBFORM
+=====================================================================================
+*/
+/* line 699, ../sass/styles.scss */
+#block-views-webform-block {
+  background-color: #1a1a1a;
+  float: left;
+  padding: 50px 20px 20px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 707, ../sass/styles.scss */
+#block-views-webform-block .views-field-title {
+  font-weight: 100;
+  font-size: 56px;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 5px;
+}
+/* line 717, ../sass/styles.scss */
+#block-views-webform-block .content {
+  margin: 0 auto;
+}
+/* line 721, ../sass/styles.scss */
+#block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
+  display: inline-block;
+  color: #bbbbbb;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-right: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 460px) {
+  /* line 721, ../sass/styles.scss */
+  #block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
+    padding: 0;
+    padding-bottom: 10px;
+    display: inherit;
+  }
+}
+/* line 740, ../sass/styles.scss */
+#block-views-webform-block .content input#edit-submitted-your-email {
+  background-color: #2D2D2D;
+  border: none;
+  height: 30px;
+  color: white;
+}
+@media screen and (max-width: 460px) {
+  /* line 740, ../sass/styles.scss */
+  #block-views-webform-block .content input#edit-submitted-your-email {
+    width: 100%;
+  }
+}
+/* line 751, ../sass/styles.scss */
+#block-views-webform-block .content input.webform-submit.button-primary.form-submit {
+  border: none;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  background-color: grey;
+}
+/* line 761, ../sass/styles.scss */
+#block-views-webform-block .content input.webform-submit.button-primary.form-submit:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*
+=====================================================================================
+FOOTER
+=====================================================================================
+*/
+/* line 775, ../sass/styles.scss */
+footer {
+  width: 100%;
+  background-color: #131313;
+  float: left;
+  padding: 15px 20px 16px;
+  box-sizing: border-box;
+}
+/* line 782, ../sass/styles.scss */
+footer #footer-item-email,
+footer #footer-item-copyright,
+footer #footer-item-siteby {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  color: grey;
+  opacity: 0.8;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 875px) {
+  /* line 782, ../sass/styles.scss */
+  footer #footer-item-email,
+  footer #footer-item-copyright,
+  footer #footer-item-siteby {
+    width: 100%;
+    line-height: 25px;
+  }
+}
+/* line 801, ../sass/styles.scss */
+footer #footer-item-email a,
+footer #footer-item-copyright a,
+footer #footer-item-siteby a {
+  color: #daa62c;
+  text-decoration: none;
+}
+/* line 807, ../sass/styles.scss */
+footer #footer-item-email,
+footer #footer-item-copyright {
+  opacity: 1;
+}

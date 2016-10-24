@@ -1,0 +1,811 @@
+/*
+=====================================================================================
+VARIABLES
+=====================================================================================
+*/
+$phone: 460px;
+$galaxys6:580px;
+$ipad: 768px;
+$desktop: 980px;
+$medium:1080px;
+$large: 1400px;
+$ultra:1920px;
+
+$gold:#daa62c;
+$white: #fff;
+$jetblack:#000;
+$black: #111111;
+$grey: #bbbbbb;
+$lightgrey:#f2f2f2;
+$lightblue: #72a1bd;
+$darkblue: #363861;
+$deepblue: #37527d;
+$steelgrey:#292929;
+
+$headline:'KenyanCoffee';
+$bodycopy: 'Roboto Slab', serif;
+
+/*
+===
+*/
+
+%fluidwidth {
+	width:100%;
+	padding: 50px 0;
+
+
+}
+
+%flexwidth {
+	width:100%;
+	padding: 0 20px;
+}
+
+%fixedwidth {
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+	padding:50px 20px;
+}
+
+%hotspot {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: white;
+	z-index: 10;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
+	filter: alpha(opacity=0);
+	zoom: 1;
+}
+
+%clearfix {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*
+===
+*/
+
+@font-face {
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_Normal.ttf');
+    font-style:normal;
+    font-weight:100;
+}
+
+@font-face {
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_Bold.ttf');
+    font-style:normal;
+    font-weight:200;
+}
+
+@font-face {
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_Italic.ttf');
+    font-style:italic;
+    font-weight:100;
+}
+
+@font-face {
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_BoldItalic.ttf');
+    font-style:italic;
+    font-weight:200;
+}
+
+/*
+=====================================================================================
+RESET
+=====================================================================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing:border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	font-family:$bodycopy;
+	line-height:1.4;
+	font-size:18px;
+}
+
+img {
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+body {
+	width:100%;
+	height:100%;
+	font-family: 'KenyanCoffee';
+	font-style:normal;
+	font-weight:100;
+}
+
+
+/*
+=====================================================================================
+MISC
+=====================================================================================
+*/
+
+.breadcrumb, .front #page-title, .not-front .header__name-and-slogan {
+	display:none;
+	
+}
+
+.tabs {
+	@extend %fixedwidth;
+	margin:0 auto !important;
+	padding:0 3% !important;
+}
+
+/*
+=====================================================================================
+SOCIAL MEDIA
+=====================================================================================
+*/
+
+
+#social-media-menu {
+		position:absolute;
+		top:50%;
+		right:10px;
+		-moz-transform: translateY(-50%); 
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		-ms-transform: translateY(-50%); 
+		transform: translateY(-50%);
+
+		a {
+			display:block;
+			margin:5px;
+			text-align:center;
+
+		}
+
+		.fa-facebook {
+			background-color: #3B5998;
+		}
+
+		.fa-instagram {
+			background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+		}
+
+		i {
+			font-size:16px;
+			color:$lightgrey;
+			width:26px;
+			height:26px;
+			
+			line-height: 26px;
+		}
+
+		
+		/*
+		.resume {
+			i {
+				font-size:24px;
+
+				@media screen and (max-width: $galaxys6) {
+					font-size:16.6px !important;
+				}
+			}
+		}
+		*/
+	}
+
+
+/*
+=====================================================================================
+HEADER
+=====================================================================================
+*/
+
+.header__name-and-slogan {
+	@extend %fixedwidth;
+	padding:50px 20px 0;
+
+	h1 {
+		font-size:68px;
+		font-family: $headline;
+		font-weight:100;
+		text-transform: uppercase;
+		display: inline-block;
+
+		a {
+			color:$white;
+
+		}
+
+	}
+
+	h2 {
+		color:$grey;
+		font-size:24px;
+		letter-spacing: 1px;
+		display: inline-block;
+		padding-left:10px;
+	}
+}
+
+#header-wrapper {
+	background:rgba($jetblack,0.95);
+	height:80px;
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:9;
+
+	.region-header {
+		width:796px;
+		position: absolute;
+    	left: 50.4%;
+    	z-index:999;
+    	top:50%;
+    	-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-o-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+
+	a#logo {
+		position: absolute;
+		z-index:9999;
+		left:50%;
+		-moz-transform: translateX(-50%); 
+		-webkit-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		-ms-transform: translateX(-50%); 
+		transform: translateX(-50%);
+
+		img {
+			width:105px;
+			height:auto;
+			text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+			opacity:1;
+
+			&:hover {
+				opacity:0.8;
+			}
+		}
+	}
+
+}
+
+/*
+=====================================================================================
+MENU
+=====================================================================================
+*/
+
+#block-system-main-menu {
+	li {
+		display:inline-block;
+		font-size:18px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+
+		@media screen and (max-width: 800px ) {
+			font-family:$bodycopy;
+			font-weight:400;
+		}
+
+		a {
+			color:$lightgrey;
+			padding: 5px 10px;
+			display:block;
+			text-align: center;
+			-webkit-transition: all 250ms ease;
+			-moz-transition: all 250ms ease;
+			-ms-transition: all 250ms ease;
+			-o-transition: all 250ms ease;
+			transition: all 250ms ease;
+			border-bottom:1px solid rgba($black,0.95);
+
+			@media screen and (max-width: 800px ) {
+				padding:20px 0px;
+
+			}
+
+			&:hover {
+				color:$gold;
+				border-bottom:1px solid $white;
+			}
+		}
+	}
+
+	li:nth-child(4) {
+		margin-left:150px;
+
+		@media screen and (max-width: 800px ) {
+			margin:0;
+		}
+	}
+}
+
+/*
+=====================================================================================
+MEAN MENU
+=====================================================================================
+*/
+
+.mean-container .mean-bar {
+	width:80px;
+	height:80px;
+	background-color:$grey;
+	padding:0;
+	z-index:13;
+}
+
+a.meanmenu-reveal.meanclose {
+	top:10px;
+	font-weight:400;
+	color:$black;
+	font-family: $bodycopy;
+}
+
+.mean-container a.meanmenu-reveal span {
+	background:$black;
+	height: 4px;
+    margin-top: 8px;
+}
+
+.mean-container a.meanmenu-reveal {
+	width:40px;
+    height: 51px;
+    padding: 17px 20px 12px;
+}
+
+.mean-container .mean-nav {
+	width:100vw;
+	margin-top: 80px;
+	background:$black;
+	text-align: center;
+}
+
+a.meanmenu-reveal {
+
+}
+
+.mean-container .mean-nav ul li {
+	float:none;
+}
+
+.mean-container .mean-nav ul li a {
+	width:100%;
+}
+
+
+/*
+=====================================================================================
+HERO
+=====================================================================================
+*/
+
+#hero {
+	width:100%;
+	position:relative;
+	height:700px;
+	background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.15)),
+	url('http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/Hero-Image.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:cover;
+
+	#hero-text {
+		color:$white;
+		position:absolute;
+		top:50%;
+		left:50%;
+		-moz-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+		-webkit-transform: translateY(-50%) rtranslateX(-50%) otate(-10deg) skew(-10deg, 0);
+		-o-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+		-ms-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+		transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
+		h2 {
+			font-size:106px;
+			font-weight:200;
+			text-transform: uppercase;
+		}
+
+		h3 {
+			text-align: center;
+			font-family: $bodycopy;
+			font-size:26px;
+		}
+	}
+}
+
+/*
+=====================================================================================
+MAIN
+=====================================================================================
+*/
+#main {
+	background-color: #000000;
+	background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	color:$white;
+
+	#page-title {
+		@extend %fixedwidth;
+		padding:60px 20px 0;
+		text-transform: uppercase;
+		font-size:58px;
+
+		@media screen and (max-width: $phone ) {
+			font-size:38px;
+		}
+
+	}
+
+	#block-system-main {
+		@extend %fixedwidth;
+	}
+
+	.field-name-field-description {
+		
+	}
+
+}
+
+/*
+=====================================================================================
+SHOOTERS BLOCK
+=====================================================================================
+*/
+
+#block-views-shooters-block, #block-views-shooters-block-1 {
+	background-color: #060405;
+
+	h3 {
+		font-size: 48px;
+		font-family: "KenyanCoffee";
+		font-weight: 100;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding-bottom:20px;
+	}
+	
+	.content {
+		max-width:1200px;
+		padding:50px 20px;
+		width:100%;
+		margin: 0 auto;
+
+		&:after {
+			@extend %clearfix; 
+		}
+
+		.views-row {
+			width:33.3333333%;
+			float:left;
+			height:auto;
+
+			@media screen and (max-width: $galaxys6 ) {
+				width:100%;
+			}
+		}
+	}
+
+	.shooter-wrapper {
+		position:relative;
+		overflow:hidden;
+
+		&:hover {
+
+			.name-of-person {
+				-moz-transform: translateX(-0px);
+				-webkit-transform: translateX(-0px);
+				-o-transform: translateX(-0px);
+				-ms-transform: translateX(-0px);
+				transform: translateX(-0px);
+			}
+		}
+
+		.name-of-person {
+			position:absolute;
+			bottom:20px;
+			font-style:italic;
+			-moz-transform: translateX(-105%);
+			-webkit-transform: translateX(-105%);
+			-o-transform: translateX(-105%);
+			-ms-transform: translateX(-105%);
+			transform: translateX(-105%);
+			-webkit-transition: all 250ms ease;
+			-moz-transition: all 200ms ease;
+			-ms-transition: all 200ms ease;
+			-o-transition: all 200ms ease;
+			transition: all 200ms ease;
+			background:rgba($black,0.5);
+			padding:20px;
+			width:100%;
+
+			a {
+				color:$lightgrey;
+				font-size:24px;
+
+			}
+		}
+	}
+}
+
+/*
+=====================================================================================
+SHOOTERS
+=====================================================================================
+*/
+
+.node-type-shooter {
+
+	.content:after {
+		@extend %clearfix;
+	}
+
+	.field-name-field-photo-of-shooter {
+		float:right;
+		width:35%;
+
+		img {
+
+			@media screen and (max-width: 800px ) {
+				width:80%;
+			}
+		}
+
+		@media screen and (max-width: 800px ) {
+			width:100%;
+			padding:0 0 20px;
+		}
+	}
+
+	.field-name-field-description-of-shooter,
+	.field-name-field-hometown-of-shooter,
+	.field-name-field-homerange-of-shooter,
+	.field-name-field-instagram-of-shooter,
+	.field-name-field-sponsors-of-shooter,
+	.field-name-field-occupation-of-shooter,
+	.field-name-field-classification-of-shooter,
+	.field-name-field-q-a {
+		float:left;
+		width:60%;
+		font-family:$bodycopy;
+		padding:25px 0 0;
+		font-size:20px;
+
+		@media screen and (max-width: 800px ) {
+			width:100%;
+		}
+	}
+
+	.field-name-field-description-of-shooter {
+		font-family:$bodycopy;
+		font-size:20px;
+		padding:0;
+	}
+
+	.field-label {
+		font-family:$bodycopy;
+		font-weight:600;
+		text-transform: uppercase;
+		font-size:16px;
+	}
+
+
+
+	a {
+		color:$gold;
+	}
+}
+
+/*
+=====================================================================================
+ACCORDIAN
+=====================================================================================
+*/
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background:$black;
+	font-family: $bodycopy;
+
+	a {
+		color:$white !important;
+	}
+}
+
+
+.ui-accordion .ui-accordion-header {
+	margin-top:8px !important;
+}
+
+
+
+
+/*
+=====================================================================================
+WEBFORM
+=====================================================================================
+*/
+
+#block-views-webform-block {
+	background-color:#1a1a1a;
+	float:left;
+	padding:50px 20px 20px;
+	width: 100%;
+	text-align:center;
+	box-sizing:border-box;
+
+	.views-field-title {
+		font-weight:100;
+		font-size:56px;
+		color:$white;
+		text-transform: uppercase;
+		font-style:italic;
+		letter-spacing: 5px;
+
+	}
+
+	.content {
+		
+		margin: 0 auto;
+
+		.form-item.webform-component.webform-component-email.webform-component--your-email label {
+			display:inline-block;
+			color:$grey;
+			font-family: $bodycopy;
+			font-weight:300;
+			text-transform: uppercase;
+			padding-right:20px;
+			font-size:14px;
+			letter-spacing: 1px;
+
+
+			@media screen and (max-width: $phone) {
+				padding:0;
+				padding-bottom:10px;
+				display:inherit;
+			}
+
+		}
+
+		input#edit-submitted-your-email {
+			background-color: #2D2D2D;
+			border:none;
+			height:30px;
+			color:white;
+
+			@media screen and (max-width: $phone) {
+				width:100%;
+			}
+		}
+
+		input.webform-submit.button-primary.form-submit {
+			border: none;
+			font-family: $bodycopy;
+			text-transform: uppercase;
+			color:$lightgrey;
+			font-weight:200;
+			letter-spacing: 1px;
+			padding:10px 20px;
+			background-color:grey;
+
+			&:hover {
+				opacity:0.7;
+				cursor:pointer; 			
+			}
+		}
+	}
+}
+
+/*
+=====================================================================================
+FOOTER
+=====================================================================================
+*/
+
+footer {
+	width:100%;
+	background-color: #131313;
+	float:left;
+	padding: 15px 20px 16px;
+	box-sizing:border-box;
+
+	#footer-item-email,
+	#footer-item-copyright,
+	#footer-item-siteby {
+		display: inline-block;
+		width:33%;
+		text-align: center;
+		color:grey;
+		opacity:0.8;
+		font-family: 'Lato', sans-serif;
+		font-weight:300;
+		font-size:10px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		@media screen and (max-width: 875px) {
+			width:100%;
+			line-height: 25px;
+		}
+
+		a {
+			color:$gold;
+			text-decoration: none;
+			}
+		}
+
+	#footer-item-email,
+	#footer-item-copyright {
+		opacity: 1;
+	}
+}
