@@ -46,10 +46,6 @@
     </div>
 
     <div id="hero">
-      <div id="hero-text">
-        <h2>The Best Bullets.</h2>
-        <h3>No bullet is better.</h3>
-      </div>
     </div>
 
     <div id="main">

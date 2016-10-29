@@ -21,6 +21,7 @@ $lightblue: #72a1bd;
 $darkblue: #363861;
 $deepblue: #37527d;
 $steelgrey:#292929;
+$brightgold: #e0c26e;
 
 $headline:'KenyanCoffee';
 $bodycopy: 'Roboto Slab', serif;
@@ -326,6 +327,11 @@ HEADER
 			height:auto;
 			text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 			opacity:1;
+			-webkit-transition: all 150ms ease;
+			-moz-transition: all 150ms ease;
+			-ms-transition: all 150ms ease;
+			-o-transition: all 150ms ease;
+			transition: all 150ms ease;
 
 			&:hover {
 				opacity:0.8;
@@ -347,6 +353,7 @@ MENU
 		font-size:18px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		padding:0 10px;
 
 		@media screen and (max-width: 800px ) {
 			font-family:$bodycopy;
@@ -355,7 +362,7 @@ MENU
 
 		a {
 			color:$lightgrey;
-			padding: 5px 10px;
+			padding: 5px 0;
 			display:block;
 			text-align: center;
 			-webkit-transition: all 250ms ease;
@@ -363,7 +370,38 @@ MENU
 			-ms-transition: all 250ms ease;
 			-o-transition: all 250ms ease;
 			transition: all 250ms ease;
-			border-bottom:1px solid rgba($black,0.95);
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-moz-osx-font-smoothing: grayscale;
+			position: relative;
+			overflow: hidden;
+
+			&:before {
+			  content: "";
+			  position: absolute;
+			  z-index: -1;
+			  left: 50%;
+			  right: 50%;
+			  bottom: 0;
+			  background: $gold;
+			  height: 2px;
+			  -webkit-transition-property: left, right;
+			  transition-property: left, right;
+			  -webkit-transition-duration: 175ms;
+			  transition-duration: 175ms;
+			  -webkit-transition-timing-function: ease-out;
+			  transition-timing-function: ease-out;
+			}
+
+			&:hover:before, &:focus:before, &:active:before {
+			  left: 0;
+			  right: 0;
+			}
 
 			@media screen and (max-width: 800px ) {
 				padding:20px 0px;
@@ -371,8 +409,7 @@ MENU
 			}
 
 			&:hover {
-				color:$gold;
-				border-bottom:1px solid $white;
+				color:$brightgold;
 			}
 		}
 	}
@@ -448,16 +485,8 @@ HERO
 #hero {
 	width:100%;
 	position:relative;
-	height:700px;
-	background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.15)),
-	url('http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/Hero-Image.jpg');
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size:cover;
-
+	height:650px;
+/*
 	#hero-text {
 		color:$white;
 		position:absolute;
@@ -482,6 +511,24 @@ HERO
 			font-size:26px;
 		}
 	}
+*/
+}
+
+.field-name-field-hero-callout {
+	color:$white;
+	position:absolute;
+	top:45%;
+	left:50%;
+	font-size:106px;
+	font-weight:200;
+	text-transform: uppercase;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+	-webkit-transform: translateY(-50%) rtranslateX(-50%) otate(-10deg) skew(-10deg, 0);
+	-o-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+	transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+	text-shadow: 0px 0px 24px rgba(0, 0, 0, 1);
+
 }
 
 /*
@@ -512,7 +559,9 @@ MAIN
 	}
 
 	.field-name-field-description {
-		
+		font-family:$bodycopy;
+		line-height:1.4;
+		font-size:18px;
 	}
 
 }
@@ -546,11 +595,11 @@ SHOOTERS BLOCK
 		}
 
 		.views-row {
-			width:33.3333333%;
+			width:25%;
 			float:left;
 			height:auto;
 
-			@media screen and (max-width: $galaxys6 ) {
+			@media screen and (max-width: $ipad ) {
 				width:100%;
 			}
 		}
@@ -563,23 +612,23 @@ SHOOTERS BLOCK
 		&:hover {
 
 			.name-of-person {
-				-moz-transform: translateX(-0px);
-				-webkit-transform: translateX(-0px);
-				-o-transform: translateX(-0px);
-				-ms-transform: translateX(-0px);
-				transform: translateX(-0px);
+				-moz-transform: translateY(-20px);
+				-webkit-transform: translateY(-20px);
+				-o-transform: translateY(-20px);
+				-ms-transform: translateY(-20px);
+				transform: translateY(-20px);
 			}
 		}
 
 		.name-of-person {
 			position:absolute;
-			bottom:20px;
+			bottom:0px;
 			font-style:italic;
-			-moz-transform: translateX(-105%);
-			-webkit-transform: translateX(-105%);
-			-o-transform: translateX(-105%);
-			-ms-transform: translateX(-105%);
-			transform: translateX(-105%);
+			-moz-transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			transform: translateY(0px);
 			-webkit-transition: all 250ms ease;
 			-moz-transition: all 200ms ease;
 			-ms-transition: all 200ms ease;

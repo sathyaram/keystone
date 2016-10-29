@@ -6,7 +6,7 @@ VARIABLES
 /*
 ===
 */
-/* line 44, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 .tabs, .header__name-and-slogan, #main #page-title, #main #block-system-main {
   width: 100%;
   max-width: 1200px;
@@ -14,7 +14,7 @@ VARIABLES
   padding: 50px 20px;
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 #block-views-shooters-block .content:after, #block-views-shooters-block-1 .content:after, .node-type-shooter .content:after {
   visibility: hidden;
   display: block;
@@ -56,7 +56,7 @@ VARIABLES
 RESET
 =====================================================================================
 */
-/* line 113, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,62 +80,62 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 135, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 139, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 body {
   line-height: 1;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 145, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 153, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 158, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 164, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 p {
   font-family: "Roboto Slab", serif;
   line-height: 1.4;
   font-size: 18px;
 }
 
-/* line 170, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 body {
   width: 100%;
   height: 100%;
@@ -149,12 +149,12 @@ body {
 MISC
 =====================================================================================
 */
-/* line 191, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .breadcrumb, .front #page-title, .not-front .header__name-and-slogan {
   display: none;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .tabs {
   margin: 0 auto !important;
   padding: 0 3% !important;
@@ -165,7 +165,7 @@ MISC
 SOCIAL MEDIA
 =====================================================================================
 */
-/* line 209, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 #social-media-menu {
   position: absolute;
   top: 50%;
@@ -187,21 +187,21 @@ SOCIAL MEDIA
   		}
   		*/
 }
-/* line 219, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 #social-media-menu a {
   display: block;
   margin: 5px;
   text-align: center;
 }
-/* line 226, ../sass/styles.scss */
+/* line 227, ../sass/styles.scss */
 #social-media-menu .fa-facebook {
   background-color: #3B5998;
 }
-/* line 230, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 #social-media-menu .fa-instagram {
   background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
 }
-/* line 234, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 #social-media-menu i {
   font-size: 16px;
   color: #f2f2f2;
@@ -215,11 +215,11 @@ SOCIAL MEDIA
 HEADER
 =====================================================================================
 */
-/* line 264, ../sass/styles.scss */
+/* line 265, ../sass/styles.scss */
 .header__name-and-slogan {
   padding: 50px 20px 0;
 }
-/* line 268, ../sass/styles.scss */
+/* line 269, ../sass/styles.scss */
 .header__name-and-slogan h1 {
   font-size: 68px;
   font-family: "KenyanCoffee";
@@ -227,11 +227,11 @@ HEADER
   text-transform: uppercase;
   display: inline-block;
 }
-/* line 275, ../sass/styles.scss */
+/* line 276, ../sass/styles.scss */
 .header__name-and-slogan h1 a {
   color: #fff;
 }
-/* line 282, ../sass/styles.scss */
+/* line 283, ../sass/styles.scss */
 .header__name-and-slogan h2 {
   color: #bbbbbb;
   font-size: 24px;
@@ -240,7 +240,7 @@ HEADER
   padding-left: 10px;
 }
 
-/* line 291, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
 #header-wrapper {
   background: rgba(0, 0, 0, 0.95);
   height: 80px;
@@ -250,7 +250,7 @@ HEADER
   width: 100%;
   z-index: 9;
 }
-/* line 300, ../sass/styles.scss */
+/* line 301, ../sass/styles.scss */
 #header-wrapper .region-header {
   width: 796px;
   position: absolute;
@@ -263,7 +263,7 @@ HEADER
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 314, ../sass/styles.scss */
+/* line 315, ../sass/styles.scss */
 #header-wrapper a#logo {
   position: absolute;
   z-index: 9999;
@@ -274,14 +274,19 @@ HEADER
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 324, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 #header-wrapper a#logo img {
   width: 105px;
   height: auto;
   text-shadow: 0px 0px 10px black;
   opacity: 1;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
 }
-/* line 330, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 #header-wrapper a#logo img:hover {
   opacity: 0.8;
 }
@@ -291,24 +296,25 @@ HEADER
 MENU
 =====================================================================================
 */
-/* line 345, ../sass/styles.scss */
+/* line 351, ../sass/styles.scss */
 #block-system-main-menu li {
   display: inline-block;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding: 0 10px;
 }
 @media screen and (max-width: 800px) {
-  /* line 345, ../sass/styles.scss */
+  /* line 351, ../sass/styles.scss */
   #block-system-main-menu li {
     font-family: "Roboto Slab", serif;
     font-weight: 400;
   }
 }
-/* line 356, ../sass/styles.scss */
+/* line 363, ../sass/styles.scss */
 #block-system-main-menu li a {
   color: #f2f2f2;
-  padding: 5px 10px;
+  padding: 5px 0;
   display: block;
   text-align: center;
   -webkit-transition: all 250ms ease;
@@ -316,25 +322,55 @@ MENU
   -ms-transition: all 250ms ease;
   -o-transition: all 250ms ease;
   transition: all 250ms ease;
-  border-bottom: 1px solid rgba(17, 17, 17, 0.95);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+/* line 384, ../sass/styles.scss */
+#block-system-main-menu li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #daa62c;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 175ms;
+  transition-duration: 175ms;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 401, ../sass/styles.scss */
+#block-system-main-menu li a:hover:before, #block-system-main-menu li a:focus:before, #block-system-main-menu li a:active:before {
+  left: 0;
+  right: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 356, ../sass/styles.scss */
+  /* line 363, ../sass/styles.scss */
   #block-system-main-menu li a {
     padding: 20px 0px;
   }
 }
-/* line 373, ../sass/styles.scss */
+/* line 411, ../sass/styles.scss */
 #block-system-main-menu li a:hover {
-  color: #daa62c;
-  border-bottom: 1px solid #fff;
+  color: #e0c26e;
 }
-/* line 380, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 #block-system-main-menu li:nth-child(4) {
   margin-left: 150px;
 }
 @media screen and (max-width: 800px) {
-  /* line 380, ../sass/styles.scss */
+  /* line 417, ../sass/styles.scss */
   #block-system-main-menu li:nth-child(4) {
     margin: 0;
   }
@@ -345,7 +381,7 @@ MENU
 MEAN MENU
 =====================================================================================
 */
-/* line 395, ../sass/styles.scss */
+/* line 432, ../sass/styles.scss */
 .mean-container .mean-bar {
   width: 80px;
   height: 80px;
@@ -354,7 +390,7 @@ MEAN MENU
   z-index: 13;
 }
 
-/* line 403, ../sass/styles.scss */
+/* line 440, ../sass/styles.scss */
 a.meanmenu-reveal.meanclose {
   top: 10px;
   font-weight: 400;
@@ -362,21 +398,21 @@ a.meanmenu-reveal.meanclose {
   font-family: "Roboto Slab", serif;
 }
 
-/* line 410, ../sass/styles.scss */
+/* line 447, ../sass/styles.scss */
 .mean-container a.meanmenu-reveal span {
   background: #111111;
   height: 4px;
   margin-top: 8px;
 }
 
-/* line 416, ../sass/styles.scss */
+/* line 453, ../sass/styles.scss */
 .mean-container a.meanmenu-reveal {
   width: 40px;
   height: 51px;
   padding: 17px 20px 12px;
 }
 
-/* line 422, ../sass/styles.scss */
+/* line 459, ../sass/styles.scss */
 .mean-container .mean-nav {
   width: 100vw;
   margin-top: 80px;
@@ -384,12 +420,12 @@ a.meanmenu-reveal.meanclose {
   text-align: center;
 }
 
-/* line 433, ../sass/styles.scss */
+/* line 470, ../sass/styles.scss */
 .mean-container .mean-nav ul li {
   float: none;
 }
 
-/* line 437, ../sass/styles.scss */
+/* line 474, ../sass/styles.scss */
 .mean-container .mean-nav ul li a {
   width: 100%;
 }
@@ -399,40 +435,54 @@ a.meanmenu-reveal.meanclose {
 HERO
 =====================================================================================
 */
-/* line 448, ../sass/styles.scss */
+/* line 485, ../sass/styles.scss */
 #hero {
   width: 100%;
   position: relative;
-  height: 700px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15)), url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/Hero-Image.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
+  height: 650px;
+  /*
+  	#hero-text {
+  		color:$white;
+  		position:absolute;
+  		top:50%;
+  		left:50%;
+  		-moz-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  		-webkit-transform: translateY(-50%) rtranslateX(-50%) otate(-10deg) skew(-10deg, 0);
+  		-o-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  		-ms-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  		transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
+  		text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  
+  		h2 {
+  			font-size:106px;
+  			font-weight:200;
+  			text-transform: uppercase;
+  		}
+  
+  		h3 {
+  			text-align: center;
+  			font-family: $bodycopy;
+  			font-size:26px;
+  		}
+  	}
+  */
 }
-/* line 461, ../sass/styles.scss */
-#hero #hero-text {
+
+/* line 517, ../sass/styles.scss */
+.field-name-field-hero-callout {
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
+  font-size: 106px;
+  font-weight: 200;
+  text-transform: uppercase;
   -moz-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
   -webkit-transform: translateY(-50%) rtranslateX(-50%) otate(-10deg) skew(-10deg, 0);
   -o-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
   -ms-transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
   transform: translateY(-50%) translateX(-50%) rotate(-10deg) skew(-10deg, 0);
-  text-shadow: 0px 0px 10px black;
-}
-/* line 473, ../sass/styles.scss */
-#hero #hero-text h2 {
-  font-size: 106px;
-  font-weight: 200;
-  text-transform: uppercase;
-}
-/* line 479, ../sass/styles.scss */
-#hero #hero-text h3 {
-  text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-size: 26px;
+  text-shadow: 0px 0px 24px black;
 }
 
 /*
@@ -440,24 +490,30 @@ HERO
 MAIN
 =====================================================================================
 */
-/* line 492, ../sass/styles.scss */
+/* line 539, ../sass/styles.scss */
 #main {
   background-color: #000000;
   background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   color: #fff;
 }
-/* line 498, ../sass/styles.scss */
+/* line 545, ../sass/styles.scss */
 #main #page-title {
   padding: 60px 20px 0;
   text-transform: uppercase;
   font-size: 58px;
 }
 @media screen and (max-width: 460px) {
-  /* line 498, ../sass/styles.scss */
+  /* line 545, ../sass/styles.scss */
   #main #page-title {
     font-size: 38px;
   }
+}
+/* line 561, ../sass/styles.scss */
+#main .field-name-field-description {
+  font-family: "Roboto Slab", serif;
+  line-height: 1.4;
+  font-size: 18px;
 }
 
 /*
@@ -465,11 +521,11 @@ MAIN
 SHOOTERS BLOCK
 =====================================================================================
 */
-/* line 526, ../sass/styles.scss */
+/* line 575, ../sass/styles.scss */
 #block-views-shooters-block, #block-views-shooters-block-1 {
   background-color: #060405;
 }
-/* line 529, ../sass/styles.scss */
+/* line 578, ../sass/styles.scss */
 #block-views-shooters-block h3, #block-views-shooters-block-1 h3 {
   font-size: 48px;
   font-family: "KenyanCoffee";
@@ -478,48 +534,48 @@ SHOOTERS BLOCK
   letter-spacing: 2px;
   padding-bottom: 20px;
 }
-/* line 538, ../sass/styles.scss */
+/* line 587, ../sass/styles.scss */
 #block-views-shooters-block .content, #block-views-shooters-block-1 .content {
   max-width: 1200px;
   padding: 50px 20px;
   width: 100%;
   margin: 0 auto;
 }
-/* line 548, ../sass/styles.scss */
+/* line 597, ../sass/styles.scss */
 #block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
-  width: 33.3333333%;
+  width: 25%;
   float: left;
   height: auto;
 }
-@media screen and (max-width: 580px) {
-  /* line 548, ../sass/styles.scss */
+@media screen and (max-width: 768px) {
+  /* line 597, ../sass/styles.scss */
   #block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
     width: 100%;
   }
 }
-/* line 559, ../sass/styles.scss */
+/* line 608, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper, #block-views-shooters-block-1 .shooter-wrapper {
   position: relative;
   overflow: hidden;
 }
-/* line 565, ../sass/styles.scss */
+/* line 614, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper:hover .name-of-person, #block-views-shooters-block-1 .shooter-wrapper:hover .name-of-person {
-  -moz-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -o-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
+  -moz-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
 }
-/* line 574, ../sass/styles.scss */
+/* line 623, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper .name-of-person, #block-views-shooters-block-1 .shooter-wrapper .name-of-person {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   font-style: italic;
-  -moz-transform: translateX(-105%);
-  -webkit-transform: translateX(-105%);
-  -o-transform: translateX(-105%);
-  -ms-transform: translateX(-105%);
-  transform: translateX(-105%);
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
   -webkit-transition: all 250ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -529,7 +585,7 @@ SHOOTERS BLOCK
   padding: 20px;
   width: 100%;
 }
-/* line 592, ../sass/styles.scss */
+/* line 641, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper .name-of-person a, #block-views-shooters-block-1 .shooter-wrapper .name-of-person a {
   color: #f2f2f2;
   font-size: 24px;
@@ -540,25 +596,25 @@ SHOOTERS BLOCK
 SHOOTERS
 =====================================================================================
 */
-/* line 613, ../sass/styles.scss */
+/* line 662, ../sass/styles.scss */
 .node-type-shooter .field-name-field-photo-of-shooter {
   float: right;
   width: 35%;
 }
 @media screen and (max-width: 800px) {
-  /* line 617, ../sass/styles.scss */
+  /* line 666, ../sass/styles.scss */
   .node-type-shooter .field-name-field-photo-of-shooter img {
     width: 80%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 613, ../sass/styles.scss */
+  /* line 662, ../sass/styles.scss */
   .node-type-shooter .field-name-field-photo-of-shooter {
     width: 100%;
     padding: 0 0 20px;
   }
 }
-/* line 630, ../sass/styles.scss */
+/* line 679, ../sass/styles.scss */
 .node-type-shooter .field-name-field-description-of-shooter,
 .node-type-shooter .field-name-field-hometown-of-shooter,
 .node-type-shooter .field-name-field-homerange-of-shooter,
@@ -574,7 +630,7 @@ SHOOTERS
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 630, ../sass/styles.scss */
+  /* line 679, ../sass/styles.scss */
   .node-type-shooter .field-name-field-description-of-shooter,
   .node-type-shooter .field-name-field-hometown-of-shooter,
   .node-type-shooter .field-name-field-homerange-of-shooter,
@@ -586,20 +642,20 @@ SHOOTERS
     width: 100%;
   }
 }
-/* line 649, ../sass/styles.scss */
+/* line 698, ../sass/styles.scss */
 .node-type-shooter .field-name-field-description-of-shooter {
   font-family: "Roboto Slab", serif;
   font-size: 20px;
   padding: 0;
 }
-/* line 655, ../sass/styles.scss */
+/* line 704, ../sass/styles.scss */
 .node-type-shooter .field-label {
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
 }
-/* line 664, ../sass/styles.scss */
+/* line 713, ../sass/styles.scss */
 .node-type-shooter a {
   color: #daa62c;
 }
@@ -609,17 +665,17 @@ SHOOTERS
 ACCORDIAN
 =====================================================================================
 */
-/* line 676, ../sass/styles.scss */
+/* line 725, ../sass/styles.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   background: #111111;
   font-family: "Roboto Slab", serif;
 }
-/* line 680, ../sass/styles.scss */
+/* line 729, ../sass/styles.scss */
 .ui-state-default a, .ui-widget-content .ui-state-default a, .ui-widget-header .ui-state-default a {
   color: #fff !important;
 }
 
-/* line 686, ../sass/styles.scss */
+/* line 735, ../sass/styles.scss */
 .ui-accordion .ui-accordion-header {
   margin-top: 8px !important;
 }
@@ -629,7 +685,7 @@ ACCORDIAN
 WEBFORM
 =====================================================================================
 */
-/* line 699, ../sass/styles.scss */
+/* line 748, ../sass/styles.scss */
 #block-views-webform-block {
   background-color: #1a1a1a;
   float: left;
@@ -638,7 +694,7 @@ WEBFORM
   text-align: center;
   box-sizing: border-box;
 }
-/* line 707, ../sass/styles.scss */
+/* line 756, ../sass/styles.scss */
 #block-views-webform-block .views-field-title {
   font-weight: 100;
   font-size: 56px;
@@ -647,11 +703,11 @@ WEBFORM
   font-style: italic;
   letter-spacing: 5px;
 }
-/* line 717, ../sass/styles.scss */
+/* line 766, ../sass/styles.scss */
 #block-views-webform-block .content {
   margin: 0 auto;
 }
-/* line 721, ../sass/styles.scss */
+/* line 770, ../sass/styles.scss */
 #block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
   display: inline-block;
   color: #bbbbbb;
@@ -663,14 +719,14 @@ WEBFORM
   letter-spacing: 1px;
 }
 @media screen and (max-width: 460px) {
-  /* line 721, ../sass/styles.scss */
+  /* line 770, ../sass/styles.scss */
   #block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
     padding: 0;
     padding-bottom: 10px;
     display: inherit;
   }
 }
-/* line 740, ../sass/styles.scss */
+/* line 789, ../sass/styles.scss */
 #block-views-webform-block .content input#edit-submitted-your-email {
   background-color: #2D2D2D;
   border: none;
@@ -678,12 +734,12 @@ WEBFORM
   color: white;
 }
 @media screen and (max-width: 460px) {
-  /* line 740, ../sass/styles.scss */
+  /* line 789, ../sass/styles.scss */
   #block-views-webform-block .content input#edit-submitted-your-email {
     width: 100%;
   }
 }
-/* line 751, ../sass/styles.scss */
+/* line 800, ../sass/styles.scss */
 #block-views-webform-block .content input.webform-submit.button-primary.form-submit {
   border: none;
   font-family: "Roboto Slab", serif;
@@ -694,7 +750,7 @@ WEBFORM
   padding: 10px 20px;
   background-color: grey;
 }
-/* line 761, ../sass/styles.scss */
+/* line 810, ../sass/styles.scss */
 #block-views-webform-block .content input.webform-submit.button-primary.form-submit:hover {
   opacity: 0.7;
   cursor: pointer;
@@ -705,7 +761,7 @@ WEBFORM
 FOOTER
 =====================================================================================
 */
-/* line 775, ../sass/styles.scss */
+/* line 824, ../sass/styles.scss */
 footer {
   width: 100%;
   background-color: #131313;
@@ -713,7 +769,7 @@ footer {
   padding: 15px 20px 16px;
   box-sizing: border-box;
 }
-/* line 782, ../sass/styles.scss */
+/* line 831, ../sass/styles.scss */
 footer #footer-item-email,
 footer #footer-item-copyright,
 footer #footer-item-siteby {
@@ -729,7 +785,7 @@ footer #footer-item-siteby {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 875px) {
-  /* line 782, ../sass/styles.scss */
+  /* line 831, ../sass/styles.scss */
   footer #footer-item-email,
   footer #footer-item-copyright,
   footer #footer-item-siteby {
@@ -737,14 +793,14 @@ footer #footer-item-siteby {
     line-height: 25px;
   }
 }
-/* line 801, ../sass/styles.scss */
+/* line 850, ../sass/styles.scss */
 footer #footer-item-email a,
 footer #footer-item-copyright a,
 footer #footer-item-siteby a {
   color: #daa62c;
   text-decoration: none;
 }
-/* line 807, ../sass/styles.scss */
+/* line 856, ../sass/styles.scss */
 footer #footer-item-email,
 footer #footer-item-copyright {
   opacity: 1;
