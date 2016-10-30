@@ -7,15 +7,29 @@ VARIABLES
 ===
 */
 /* line 45, ../sass/styles.scss */
-.tabs, .header__name-and-slogan, #main #page-title, #main #block-system-main {
+.tabs, #main #page-title, #main .field-name-field-description, .not-front #block-system-main, .header__name-and-slogan, #block-views-ammunitions-block-1, #block-views-ammunition-block, #block-views-gallery-block {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
 }
 
-/* line 67, ../sass/styles.scss */
-#block-views-shooters-block .content:after, #block-views-shooters-block-1 .content:after, .node-type-shooter .content:after {
+/* line 52, ../sass/styles.scss */
+.field-name-field-category-display .field-name-field-category-link a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
+  filter: alpha(opacity=0);
+  zoom: 1;
+}
+
+/* line 65, ../sass/styles.scss */
+.field-name-field-shooters:after, #block-views-shooters-block .content:after, #block-views-shooters-block-1 .content:after, #block-views-ammunitions-block-1 .views-row:after, #block-views-ammunition-block .view-content:after, .node-type-shooter .content:after, .field-name-field-picture-grid .field-items:after, .field-name-field-category-display:after, .field-name-field-category-display .content:after, .field-name-field-category-display > .field-items:after, #block-views-gallery-block .view-content:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -56,7 +70,7 @@ VARIABLES
 RESET
 =====================================================================================
 */
-/* line 114, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,62 +94,62 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 136, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 140, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 body {
   line-height: 1;
 }
 
-/* line 143, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 146, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 154, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 159, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 165, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 p {
   font-family: "Roboto Slab", serif;
   line-height: 1.4;
   font-size: 18px;
 }
 
-/* line 171, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 177, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 body {
   width: 100%;
   height: 100%;
@@ -149,12 +163,12 @@ body {
 MISC
 =====================================================================================
 */
-/* line 192, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .breadcrumb, .front #page-title, .not-front .header__name-and-slogan {
   display: none;
 }
 
-/* line 197, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .tabs {
   margin: 0 auto !important;
   padding: 0 3% !important;
@@ -165,7 +179,7 @@ MISC
 SOCIAL MEDIA
 =====================================================================================
 */
-/* line 210, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 #social-media-menu {
   position: absolute;
   top: 50%;
@@ -187,21 +201,21 @@ SOCIAL MEDIA
   		}
   		*/
 }
-/* line 220, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 #social-media-menu a {
   display: block;
   margin: 5px;
   text-align: center;
 }
-/* line 227, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 #social-media-menu .fa-facebook {
   background-color: #3B5998;
 }
-/* line 231, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 #social-media-menu .fa-instagram {
   background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
 }
-/* line 235, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 #social-media-menu i {
   font-size: 16px;
   color: #f2f2f2;
@@ -212,14 +226,56 @@ SOCIAL MEDIA
 
 /*
 =====================================================================================
+MAIN
+=====================================================================================
+*/
+/* line 260, ../sass/styles.scss */
+#main {
+  background-color: #000000;
+  background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: #fff;
+}
+/* line 266, ../sass/styles.scss */
+#main #page-title {
+  padding: 60px 20px 0;
+  text-transform: uppercase;
+  font-size: 58px;
+}
+@media screen and (max-width: 460px) {
+  /* line 266, ../sass/styles.scss */
+  #main #page-title {
+    font-size: 38px;
+  }
+}
+/* line 278, ../sass/styles.scss */
+#main .field-name-field-description {
+  font-family: "Roboto Slab", serif;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+/* line 287, ../sass/styles.scss */
+.not-front #block-system-main {
+  padding: 0;
+}
+
+/* line 293, ../sass/styles.scss */
+.page-findadealer #block-system-main,
+.page-contact #block-system-main {
+  padding: 50px 20px;
+}
+
+/*
+=====================================================================================
 HEADER
 =====================================================================================
 */
-/* line 265, ../sass/styles.scss */
+/* line 303, ../sass/styles.scss */
 .header__name-and-slogan {
   padding: 50px 20px 0;
 }
-/* line 269, ../sass/styles.scss */
+/* line 307, ../sass/styles.scss */
 .header__name-and-slogan h1 {
   font-size: 68px;
   font-family: "KenyanCoffee";
@@ -227,11 +283,11 @@ HEADER
   text-transform: uppercase;
   display: inline-block;
 }
-/* line 276, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 .header__name-and-slogan h1 a {
   color: #fff;
 }
-/* line 283, ../sass/styles.scss */
+/* line 321, ../sass/styles.scss */
 .header__name-and-slogan h2 {
   color: #bbbbbb;
   font-size: 24px;
@@ -240,7 +296,7 @@ HEADER
   padding-left: 10px;
 }
 
-/* line 292, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 #header-wrapper {
   background: rgba(0, 0, 0, 0.95);
   height: 80px;
@@ -250,11 +306,11 @@ HEADER
   width: 100%;
   z-index: 9;
 }
-/* line 301, ../sass/styles.scss */
+/* line 339, ../sass/styles.scss */
 #header-wrapper .region-header {
-  width: 796px;
+  width: 756px;
   position: absolute;
-  left: 50.4%;
+  left: 50%;
   z-index: 999;
   top: 50%;
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -263,7 +319,7 @@ HEADER
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 315, ../sass/styles.scss */
+/* line 353, ../sass/styles.scss */
 #header-wrapper a#logo {
   position: absolute;
   z-index: 9999;
@@ -274,19 +330,14 @@ HEADER
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 325, ../sass/styles.scss */
+/* line 363, ../sass/styles.scss */
 #header-wrapper a#logo img {
-  width: 105px;
+  width: 106px;
   height: auto;
   text-shadow: 0px 0px 10px black;
   opacity: 1;
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -ms-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  transition: all 150ms ease;
 }
-/* line 336, ../sass/styles.scss */
+/* line 369, ../sass/styles.scss */
 #header-wrapper a#logo img:hover {
   opacity: 0.8;
 }
@@ -296,7 +347,7 @@ HEADER
 MENU
 =====================================================================================
 */
-/* line 351, ../sass/styles.scss */
+/* line 384, ../sass/styles.scss */
 #block-system-main-menu li {
   display: inline-block;
   font-size: 18px;
@@ -305,13 +356,13 @@ MENU
   padding: 0 10px;
 }
 @media screen and (max-width: 800px) {
-  /* line 351, ../sass/styles.scss */
+  /* line 384, ../sass/styles.scss */
   #block-system-main-menu li {
     font-family: "Roboto Slab", serif;
     font-weight: 400;
   }
 }
-/* line 363, ../sass/styles.scss */
+/* line 396, ../sass/styles.scss */
 #block-system-main-menu li a {
   color: #f2f2f2;
   padding: 5px 0;
@@ -333,7 +384,7 @@ MENU
   position: relative;
   overflow: hidden;
 }
-/* line 384, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 #block-system-main-menu li a:before {
   content: "";
   position: absolute;
@@ -350,27 +401,27 @@ MENU
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 401, ../sass/styles.scss */
+/* line 434, ../sass/styles.scss */
 #block-system-main-menu li a:hover:before, #block-system-main-menu li a:focus:before, #block-system-main-menu li a:active:before {
   left: 0;
   right: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 363, ../sass/styles.scss */
+  /* line 396, ../sass/styles.scss */
   #block-system-main-menu li a {
     padding: 20px 0px;
   }
 }
-/* line 411, ../sass/styles.scss */
+/* line 444, ../sass/styles.scss */
 #block-system-main-menu li a:hover {
   color: #e0c26e;
 }
-/* line 417, ../sass/styles.scss */
+/* line 450, ../sass/styles.scss */
 #block-system-main-menu li:nth-child(4) {
   margin-left: 150px;
 }
 @media screen and (max-width: 800px) {
-  /* line 417, ../sass/styles.scss */
+  /* line 450, ../sass/styles.scss */
   #block-system-main-menu li:nth-child(4) {
     margin: 0;
   }
@@ -381,7 +432,7 @@ MENU
 MEAN MENU
 =====================================================================================
 */
-/* line 432, ../sass/styles.scss */
+/* line 465, ../sass/styles.scss */
 .mean-container .mean-bar {
   width: 80px;
   height: 80px;
@@ -390,7 +441,7 @@ MEAN MENU
   z-index: 13;
 }
 
-/* line 440, ../sass/styles.scss */
+/* line 473, ../sass/styles.scss */
 a.meanmenu-reveal.meanclose {
   top: 10px;
   font-weight: 400;
@@ -398,21 +449,21 @@ a.meanmenu-reveal.meanclose {
   font-family: "Roboto Slab", serif;
 }
 
-/* line 447, ../sass/styles.scss */
+/* line 480, ../sass/styles.scss */
 .mean-container a.meanmenu-reveal span {
   background: #111111;
   height: 4px;
   margin-top: 8px;
 }
 
-/* line 453, ../sass/styles.scss */
+/* line 486, ../sass/styles.scss */
 .mean-container a.meanmenu-reveal {
   width: 40px;
   height: 51px;
   padding: 17px 20px 12px;
 }
 
-/* line 459, ../sass/styles.scss */
+/* line 492, ../sass/styles.scss */
 .mean-container .mean-nav {
   width: 100vw;
   margin-top: 80px;
@@ -420,12 +471,12 @@ a.meanmenu-reveal.meanclose {
   text-align: center;
 }
 
-/* line 470, ../sass/styles.scss */
+/* line 503, ../sass/styles.scss */
 .mean-container .mean-nav ul li {
   float: none;
 }
 
-/* line 474, ../sass/styles.scss */
+/* line 507, ../sass/styles.scss */
 .mean-container .mean-nav ul li a {
   width: 100%;
 }
@@ -435,7 +486,7 @@ a.meanmenu-reveal.meanclose {
 HERO
 =====================================================================================
 */
-/* line 485, ../sass/styles.scss */
+/* line 518, ../sass/styles.scss */
 #hero {
   width: 100%;
   position: relative;
@@ -468,7 +519,7 @@ HERO
   */
 }
 
-/* line 517, ../sass/styles.scss */
+/* line 550, ../sass/styles.scss */
 .field-name-field-hero-callout {
   color: #fff;
   position: absolute;
@@ -487,45 +538,80 @@ HERO
 
 /*
 =====================================================================================
-MAIN
-=====================================================================================
-*/
-/* line 539, ../sass/styles.scss */
-#main {
-  background-color: #000000;
-  background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  color: #fff;
-}
-/* line 545, ../sass/styles.scss */
-#main #page-title {
-  padding: 60px 20px 0;
-  text-transform: uppercase;
-  font-size: 58px;
-}
-@media screen and (max-width: 460px) {
-  /* line 545, ../sass/styles.scss */
-  #main #page-title {
-    font-size: 38px;
-  }
-}
-/* line 561, ../sass/styles.scss */
-#main .field-name-field-description {
-  font-family: "Roboto Slab", serif;
-  line-height: 1.4;
-  font-size: 18px;
-}
-
-/*
-=====================================================================================
 SHOOTERS BLOCK
 =====================================================================================
 */
 /* line 575, ../sass/styles.scss */
+.field-name-field-shooters {
+  max-width: 1200px;
+  padding: 50px 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 585, ../sass/styles.scss */
+.field-name-field-shooters h3 {
+  font-size: 48px;
+  font-family: "KenyanCoffee";
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+/* line 594, ../sass/styles.scss */
+.field-name-field-shooters .views-row {
+  width: 25%;
+  float: left;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  /* line 594, ../sass/styles.scss */
+  .field-name-field-shooters .views-row {
+    width: 100%;
+  }
+}
+/* line 604, ../sass/styles.scss */
+.field-name-field-shooters .shooter-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+/* line 610, ../sass/styles.scss */
+.field-name-field-shooters .shooter-wrapper:hover .name-of-person {
+  -moz-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+/* line 619, ../sass/styles.scss */
+.field-name-field-shooters .shooter-wrapper .name-of-person {
+  position: absolute;
+  bottom: 0px;
+  font-style: italic;
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  background: rgba(17, 17, 17, 0.5);
+  padding: 20px;
+  width: 100%;
+}
+/* line 637, ../sass/styles.scss */
+.field-name-field-shooters .shooter-wrapper .name-of-person a {
+  color: #f2f2f2;
+  font-size: 24px;
+}
+
+/* line 646, ../sass/styles.scss */
 #block-views-shooters-block, #block-views-shooters-block-1 {
   background-color: #060405;
 }
-/* line 578, ../sass/styles.scss */
+/* line 649, ../sass/styles.scss */
 #block-views-shooters-block h3, #block-views-shooters-block-1 h3 {
   font-size: 48px;
   font-family: "KenyanCoffee";
@@ -534,31 +620,31 @@ SHOOTERS BLOCK
   letter-spacing: 2px;
   padding-bottom: 20px;
 }
-/* line 587, ../sass/styles.scss */
+/* line 658, ../sass/styles.scss */
 #block-views-shooters-block .content, #block-views-shooters-block-1 .content {
   max-width: 1200px;
   padding: 50px 20px;
   width: 100%;
   margin: 0 auto;
 }
-/* line 597, ../sass/styles.scss */
+/* line 668, ../sass/styles.scss */
 #block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
   width: 25%;
   float: left;
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 597, ../sass/styles.scss */
+  /* line 668, ../sass/styles.scss */
   #block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
     width: 100%;
   }
 }
-/* line 608, ../sass/styles.scss */
+/* line 679, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper, #block-views-shooters-block-1 .shooter-wrapper {
   position: relative;
   overflow: hidden;
 }
-/* line 614, ../sass/styles.scss */
+/* line 685, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper:hover .name-of-person, #block-views-shooters-block-1 .shooter-wrapper:hover .name-of-person {
   -moz-transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
@@ -566,7 +652,7 @@ SHOOTERS BLOCK
   -ms-transform: translateY(-20px);
   transform: translateY(-20px);
 }
-/* line 623, ../sass/styles.scss */
+/* line 694, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper .name-of-person, #block-views-shooters-block-1 .shooter-wrapper .name-of-person {
   position: absolute;
   bottom: 0px;
@@ -585,7 +671,7 @@ SHOOTERS BLOCK
   padding: 20px;
   width: 100%;
 }
-/* line 641, ../sass/styles.scss */
+/* line 712, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper .name-of-person a, #block-views-shooters-block-1 .shooter-wrapper .name-of-person a {
   color: #f2f2f2;
   font-size: 24px;
@@ -593,28 +679,127 @@ SHOOTERS BLOCK
 
 /*
 =====================================================================================
+AMMUNITION
+=====================================================================================
+*/
+/* line 730, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row {
+  width: 100%;
+  border-top: 1px solid #fff;
+  height: auto;
+  padding: 20px 0;
+}
+/* line 740, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-label {
+  font-size: 24px;
+  font-family: "KenyanCoffee";
+}
+/* line 745, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-title {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+/* line 751, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-tagline {
+  font-family: "Roboto Slab", serif;
+}
+/* line 755, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-caliber {
+  padding: 10px 0;
+  float: left;
+  font-family: "Roboto Slab", serif;
+}
+/* line 761, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-projectile {
+  padding: 10px 20px;
+  float: left;
+  font-family: "Roboto Slab", serif;
+}
+/* line 767, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-velocity {
+  padding: 10px 20px;
+  float: left;
+  font-family: "Roboto Slab", serif;
+}
+/* line 773, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-photos {
+  width: 40%;
+  float: right;
+}
+@media screen and (max-width: 768px) {
+  /* line 773, ../sass/styles.scss */
+  #block-views-ammunitions-block-1 .views-row .views-field-field-photos {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+  }
+}
+/* line 785, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:not(:nth-child(1)) {
+  margin: 2.5% 0;
+  width: calc(23.125%);
+  height: auto;
+  float: left;
+}
+/* line 793, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(3), #block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(4), #block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(5) {
+  margin-left: 2.5%;
+}
+
+/* line 807, ../sass/styles.scss */
+#block-views-ammunition-block .views-row {
+  width: 50%;
+  float: left;
+}
+/* line 812, ../sass/styles.scss */
+#block-views-ammunition-block .category-wrapper {
+  position: relative;
+}
+/* line 815, ../sass/styles.scss */
+#block-views-ammunition-block .category-wrapper .category-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+/* line 825, ../sass/styles.scss */
+#block-views-ammunition-block .category-wrapper .category-text a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 56px;
+  padding: 50px;
+}
+
+/*
+=====================================================================================
 SHOOTERS
 =====================================================================================
 */
-/* line 662, ../sass/styles.scss */
+/* line 848, ../sass/styles.scss */
 .node-type-shooter .field-name-field-photo-of-shooter {
-  float: right;
+  float: left;
   width: 35%;
+  margin-right: 30px;
 }
 @media screen and (max-width: 800px) {
-  /* line 666, ../sass/styles.scss */
+  /* line 853, ../sass/styles.scss */
   .node-type-shooter .field-name-field-photo-of-shooter img {
     width: 80%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 662, ../sass/styles.scss */
+  /* line 848, ../sass/styles.scss */
   .node-type-shooter .field-name-field-photo-of-shooter {
     width: 100%;
     padding: 0 0 20px;
   }
 }
-/* line 679, ../sass/styles.scss */
+/* line 866, ../sass/styles.scss */
 .node-type-shooter .field-name-field-description-of-shooter,
 .node-type-shooter .field-name-field-hometown-of-shooter,
 .node-type-shooter .field-name-field-homerange-of-shooter,
@@ -630,7 +815,7 @@ SHOOTERS
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 679, ../sass/styles.scss */
+  /* line 866, ../sass/styles.scss */
   .node-type-shooter .field-name-field-description-of-shooter,
   .node-type-shooter .field-name-field-hometown-of-shooter,
   .node-type-shooter .field-name-field-homerange-of-shooter,
@@ -642,20 +827,20 @@ SHOOTERS
     width: 100%;
   }
 }
-/* line 698, ../sass/styles.scss */
+/* line 885, ../sass/styles.scss */
 .node-type-shooter .field-name-field-description-of-shooter {
   font-family: "Roboto Slab", serif;
   font-size: 20px;
   padding: 0;
 }
-/* line 704, ../sass/styles.scss */
+/* line 891, ../sass/styles.scss */
 .node-type-shooter .field-label {
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
 }
-/* line 713, ../sass/styles.scss */
+/* line 900, ../sass/styles.scss */
 .node-type-shooter a {
   color: #daa62c;
 }
@@ -665,19 +850,70 @@ SHOOTERS
 ACCORDIAN
 =====================================================================================
 */
-/* line 725, ../sass/styles.scss */
+/* line 912, ../sass/styles.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   background: #111111;
   font-family: "Roboto Slab", serif;
 }
-/* line 729, ../sass/styles.scss */
+/* line 916, ../sass/styles.scss */
 .ui-state-default a, .ui-widget-content .ui-state-default a, .ui-widget-header .ui-state-default a {
   color: #fff !important;
 }
 
-/* line 735, ../sass/styles.scss */
+/* line 922, ../sass/styles.scss */
 .ui-accordion .ui-accordion-header {
   margin-top: 8px !important;
+}
+
+/*
+=====================================================================================
+PICTURE GRID
+=====================================================================================
+*/
+/* line 934, ../sass/styles.scss */
+.field-name-field-picture-grid .field-items {
+  width: 100%;
+}
+/* line 941, ../sass/styles.scss */
+.field-name-field-picture-grid .field-items .field-item {
+  width: 33.3333333%;
+  float: left;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  /* line 941, ../sass/styles.scss */
+  .field-name-field-picture-grid .field-items .field-item {
+    width: 50%;
+  }
+}
+
+/*
+=====================================================================================
+CATEGORY DISPLAY
+=====================================================================================
+*/
+/* line 965, ../sass/styles.scss */
+.field-name-field-category-display .content {
+  position: relative;
+}
+/* line 979, ../sass/styles.scss */
+.field-name-field-category-display > .field-items > .field-item {
+  width: 50%;
+  float: left;
+}
+/* line 985, ../sass/styles.scss */
+.field-name-field-category-display .field-name-field-category-link a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 36px;
+  background: rgba(17, 17, 17, 0.5);
+  text-transform: uppercase;
+}
+/* line 995, ../sass/styles.scss */
+.field-name-field-category-display .field-name-field-category-link a:hover {
+  background-color: transparent;
 }
 
 /*
@@ -685,7 +921,7 @@ ACCORDIAN
 WEBFORM
 =====================================================================================
 */
-/* line 748, ../sass/styles.scss */
+/* line 1007, ../sass/styles.scss */
 #block-views-webform-block {
   background-color: #1a1a1a;
   float: left;
@@ -694,7 +930,7 @@ WEBFORM
   text-align: center;
   box-sizing: border-box;
 }
-/* line 756, ../sass/styles.scss */
+/* line 1015, ../sass/styles.scss */
 #block-views-webform-block .views-field-title {
   font-weight: 100;
   font-size: 56px;
@@ -703,11 +939,11 @@ WEBFORM
   font-style: italic;
   letter-spacing: 5px;
 }
-/* line 766, ../sass/styles.scss */
+/* line 1025, ../sass/styles.scss */
 #block-views-webform-block .content {
   margin: 0 auto;
 }
-/* line 770, ../sass/styles.scss */
+/* line 1029, ../sass/styles.scss */
 #block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
   display: inline-block;
   color: #bbbbbb;
@@ -719,14 +955,14 @@ WEBFORM
   letter-spacing: 1px;
 }
 @media screen and (max-width: 460px) {
-  /* line 770, ../sass/styles.scss */
+  /* line 1029, ../sass/styles.scss */
   #block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
     padding: 0;
     padding-bottom: 10px;
     display: inherit;
   }
 }
-/* line 789, ../sass/styles.scss */
+/* line 1048, ../sass/styles.scss */
 #block-views-webform-block .content input#edit-submitted-your-email {
   background-color: #2D2D2D;
   border: none;
@@ -734,12 +970,12 @@ WEBFORM
   color: white;
 }
 @media screen and (max-width: 460px) {
-  /* line 789, ../sass/styles.scss */
+  /* line 1048, ../sass/styles.scss */
   #block-views-webform-block .content input#edit-submitted-your-email {
     width: 100%;
   }
 }
-/* line 800, ../sass/styles.scss */
+/* line 1059, ../sass/styles.scss */
 #block-views-webform-block .content input.webform-submit.button-primary.form-submit {
   border: none;
   font-family: "Roboto Slab", serif;
@@ -750,7 +986,7 @@ WEBFORM
   padding: 10px 20px;
   background-color: grey;
 }
-/* line 810, ../sass/styles.scss */
+/* line 1069, ../sass/styles.scss */
 #block-views-webform-block .content input.webform-submit.button-primary.form-submit:hover {
   opacity: 0.7;
   cursor: pointer;
@@ -758,10 +994,126 @@ WEBFORM
 
 /*
 =====================================================================================
+FIND A DEALER
+=====================================================================================
+*/
+/* line 1083, ../sass/styles.scss */
+.google-store-locator-panel {
+  padding: 10px;
+}
+@media screen and (max-width: 1080px) {
+  /* line 1083, ../sass/styles.scss */
+  .google-store-locator-panel {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+/* line 1091, ../sass/styles.scss */
+.google-store-locator-panel h4 {
+  font-size: 26px !important;
+  padding: 10px 0 !important;
+  font-family: "Roboto Slab", serif;
+}
+/* line 1097, ../sass/styles.scss */
+.google-store-locator-panel #store-store-16 {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+/* line 1101, ../sass/styles.scss */
+.google-store-locator-panel #store-store-16:hover {
+  background: rgba(238, 238, 238, 0.2);
+}
+/* line 1106, ../sass/styles.scss */
+.google-store-locator-panel input {
+  width: 100%;
+  height: 30px;
+}
+/* line 1111, ../sass/styles.scss */
+.google-store-locator-panel .highlighted {
+  background: rgba(204, 204, 255, 0.5) !important;
+}
+
+/* line 1116, ../sass/styles.scss */
+.storelocator-panel .store-list .no-stores {
+  font-family: "Roboto Slab", serif;
+  color: red;
+}
+
+@media screen and (max-width: 1080px) {
+  /* line 1122, ../sass/styles.scss */
+  .google-store-locator-map {
+    width: 100%;
+  }
+}
+/* line 1128, ../sass/styles.scss */
+.google-store-locator-map .title,
+.google-store-locator-map .address {
+  color: #111111;
+}
+/* line 1133, ../sass/styles.scss */
+.google-store-locator-map a.action.directions {
+  display: none;
+}
+
+/*
+=====================================================================================
+CONTACT
+=====================================================================================
+*/
+/* line 1144, ../sass/styles.scss */
+label {
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 7px;
+  font-size: 20px;
+}
+
+/* line 1150, ../sass/styles.scss */
+input {
+  height: 30px;
+}
+
+/* line 1154, ../sass/styles.scss */
+.form-type-textarea {
+  width: 50%;
+}
+
+/* line 1158, ../sass/styles.scss */
+input#edit-submit {
+  background-color: #daa62c !important;
+  height: 50px;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+}
+
+/*
+=====================================================================================
 FOOTER
 =====================================================================================
 */
-/* line 824, ../sass/styles.scss */
+/* line 1182, ../sass/styles.scss */
+#block-views-gallery-block .views-row {
+  width: 33.333333%;
+  float: left;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  /* line 1182, ../sass/styles.scss */
+  #block-views-gallery-block .views-row {
+    width: 50%;
+    padding: 5px;
+  }
+}
+
+/*
+=====================================================================================
+FOOTER
+=====================================================================================
+*/
+/* line 1200, ../sass/styles.scss */
 footer {
   width: 100%;
   background-color: #131313;
@@ -769,7 +1121,7 @@ footer {
   padding: 15px 20px 16px;
   box-sizing: border-box;
 }
-/* line 831, ../sass/styles.scss */
+/* line 1207, ../sass/styles.scss */
 footer #footer-item-email,
 footer #footer-item-copyright,
 footer #footer-item-siteby {
@@ -785,7 +1137,7 @@ footer #footer-item-siteby {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 875px) {
-  /* line 831, ../sass/styles.scss */
+  /* line 1207, ../sass/styles.scss */
   footer #footer-item-email,
   footer #footer-item-copyright,
   footer #footer-item-siteby {
@@ -793,14 +1145,14 @@ footer #footer-item-siteby {
     line-height: 25px;
   }
 }
-/* line 850, ../sass/styles.scss */
+/* line 1226, ../sass/styles.scss */
 footer #footer-item-email a,
 footer #footer-item-copyright a,
 footer #footer-item-siteby a {
   color: #daa62c;
   text-decoration: none;
 }
-/* line 856, ../sass/styles.scss */
+/* line 1232, ../sass/styles.scss */
 footer #footer-item-email,
 footer #footer-item-copyright {
   opacity: 1;

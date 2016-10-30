@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Keystone Customizations feature.
+ */
+
+include_once 'keystone_customizations.features.inc';

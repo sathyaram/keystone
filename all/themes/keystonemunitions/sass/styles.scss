@@ -56,9 +56,7 @@ $bodycopy: 'Roboto Slab', serif;
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: white;
 	z-index: 10;
-	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
 	filter: alpha(opacity=0);
 	zoom: 1;
@@ -254,8 +252,48 @@ SOCIAL MEDIA
 		}
 		*/
 	}
+/*
+=====================================================================================
+MAIN
+=====================================================================================
+*/
+#main {
+	background-color: #000000;
+	background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	color:$white;
+
+	#page-title {
+		@extend %fixedwidth;
+		padding:60px 20px 0;
+		text-transform: uppercase;
+		font-size:58px;
+
+		@media screen and (max-width: $phone ) {
+			font-size:38px;
+		}
+
+	}
+
+	.field-name-field-description {
+		font-family:$bodycopy;
+		line-height:1.4;
+		font-size:18px;
+		@extend %fixedwidth;
+	}
+
+}
+
+.not-front #block-system-main {
+	@extend %fixedwidth;
+	padding:0;
+}
 
 
+.page-findadealer #block-system-main,
+.page-contact #block-system-main {
+	padding:50px 20px;
+}
 /*
 =====================================================================================
 HEADER
@@ -299,9 +337,9 @@ HEADER
 	z-index:9;
 
 	.region-header {
-		width:796px;
+		width:756px;
 		position: absolute;
-    	left: 50.4%;
+    	left: 50%;
     	z-index:999;
     	top:50%;
     	-moz-transform: translateX(-50%) translateY(-50%);
@@ -323,15 +361,10 @@ HEADER
 		transform: translateX(-50%);
 
 		img {
-			width:105px;
+			width:106px;
 			height:auto;
 			text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 			opacity:1;
-			-webkit-transition: all 150ms ease;
-			-moz-transition: all 150ms ease;
-			-ms-transition: all 150ms ease;
-			-o-transition: all 150ms ease;
-			transition: all 150ms ease;
 
 			&:hover {
 				opacity:0.8;
@@ -531,46 +564,84 @@ HERO
 
 }
 
-/*
-=====================================================================================
-MAIN
-=====================================================================================
-*/
-#main {
-	background-color: #000000;
-	background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
-	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-	color:$white;
 
-	#page-title {
-		@extend %fixedwidth;
-		padding:60px 20px 0;
-		text-transform: uppercase;
-		font-size:58px;
-
-		@media screen and (max-width: $phone ) {
-			font-size:38px;
-		}
-
-	}
-
-	#block-system-main {
-		@extend %fixedwidth;
-	}
-
-	.field-name-field-description {
-		font-family:$bodycopy;
-		line-height:1.4;
-		font-size:18px;
-	}
-
-}
 
 /*
 =====================================================================================
 SHOOTERS BLOCK
 =====================================================================================
 */
+
+.field-name-field-shooters {
+	max-width:1200px;
+	padding:50px 20px;
+	width:100%;
+	margin: 0 auto;
+
+	&:after {
+		@extend %clearfix;
+	}
+
+	h3 {
+		font-size: 48px;
+		font-family: "KenyanCoffee";
+		font-weight: 100;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding-bottom:20px;
+	}
+
+	.views-row {
+		width:25%;
+		float:left;
+		height:auto;
+
+		@media screen and (max-width: $ipad ) {
+			width:100%;
+		}
+	}
+
+	.shooter-wrapper {
+		position:relative;
+		overflow:hidden;
+
+		&:hover {
+
+			.name-of-person {
+				-moz-transform: translateY(-20px);
+				-webkit-transform: translateY(-20px);
+				-o-transform: translateY(-20px);
+				-ms-transform: translateY(-20px);
+				transform: translateY(-20px);
+			}
+		}
+
+		.name-of-person {
+			position:absolute;
+			bottom:0px;
+			font-style:italic;
+			-moz-transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			transform: translateY(0px);
+			-webkit-transition: all 250ms ease;
+			-moz-transition: all 200ms ease;
+			-ms-transition: all 200ms ease;
+			-o-transition: all 200ms ease;
+			transition: all 200ms ease;
+			background:rgba($black,0.5);
+			padding:20px;
+			width:100%;
+
+			a {
+				color:$lightgrey;
+				font-size:24px;
+
+			}
+		}
+	}
+}
 
 #block-views-shooters-block, #block-views-shooters-block-1 {
 	background-color: #060405;
@@ -649,6 +720,121 @@ SHOOTERS BLOCK
 
 /*
 =====================================================================================
+AMMUNITION
+=====================================================================================
+*/
+// For Range, Competition
+#block-views-ammunitions-block-1 {
+	@extend %fixedwidth;
+
+	.views-row {
+		width:100%;
+		border-top:1px solid $white;
+		height:auto;
+		padding:20px 0;
+
+		&:after {
+			@extend %clearfix;
+		}
+
+		.views-label {
+			font-size:24px;
+			font-family:$headline;
+		}
+
+		.views-field-title {
+			font-size:52px;
+			font-weight:200;
+			text-transform: uppercase;
+		}
+
+		.views-field-field-tagline {
+			font-family:$bodycopy;
+		}
+
+		.views-field-field-caliber {
+			padding:10px 0;
+			float:left;
+			font-family:$bodycopy;
+		}
+
+		.views-field-field-projectile {
+			padding:10px 20px;
+			float:left;
+			font-family:$bodycopy;
+		}
+
+		.views-field-field-velocity {
+			padding:10px 20px;
+			float:left;
+			font-family:$bodycopy;
+		}
+
+		.views-field-field-photos {
+			width:40%;
+			float:right;
+
+		@media screen and (max-width: $ipad) {
+			width:100%;
+			float:left;
+			padding-top:20px;
+		}
+
+			ul {
+
+				li:not(:nth-child(1)) {
+					margin:2.5% 0;
+					width:calc(23.125%);
+					height:auto;
+					float:left;
+
+				}
+
+				li:nth-child(3),li:nth-child(4),li:nth-child(5) {
+					margin-left:2.5%;
+				}
+			}
+		}
+	}
+}
+
+#block-views-ammunition-block,  {
+	@extend %fixedwidth;
+
+	.view-content:after {
+		@extend %clearfix;
+	}
+	.views-row {
+		width:50%;
+		float:left;
+	}
+
+	.category-wrapper {
+		position:relative;
+
+		.category-text {
+			position: absolute;
+			top:50%;
+			left:50%;
+			-moz-transform: translateY(-50%) translateX(-50%);
+			-webkit-transform: translateY(-50%) translateX(-50%);
+			-o-transform: translateY(-50%) translateX(-50%);
+			-ms-transform: translateY(-50%) translateX(-50%);
+			transform: translateY(-50%) translateX(-50%);
+
+			a {
+				color:$white;
+				text-transform: uppercase;
+				font-size:56px;
+				padding:50px;
+			}
+		}
+	}
+
+}
+
+/*
+=====================================================================================
 SHOOTERS
 =====================================================================================
 */
@@ -660,8 +846,9 @@ SHOOTERS
 	}
 
 	.field-name-field-photo-of-shooter {
-		float:right;
+		float:left;
 		width:35%;
+		margin-right: 30px;
 
 		img {
 
@@ -736,8 +923,80 @@ ACCORDIAN
 	margin-top:8px !important;
 }
 
+/*
+=====================================================================================
+PICTURE GRID
+=====================================================================================
+*/
 
+.field-name-field-picture-grid {
 
+	.field-items {
+		width:100%;
+
+		&:after {
+			@extend %clearfix;
+		}
+
+		.field-item {
+			width:33.3333333%;
+			float:left;
+			height:auto;
+
+			@media screen and (max-width: $ipad) {
+				width:50%;
+			}
+		}
+	}
+}
+
+/*
+=====================================================================================
+CATEGORY DISPLAY
+=====================================================================================
+*/
+
+.field-name-field-category-display {
+
+	&:after {
+		@extend %clearfix;
+	}
+
+	.content {
+		position:relative;
+
+		&:after {
+			@extend %clearfix;
+		}
+	}
+
+	> .field-items {
+
+		&:after {
+			@extend %clearfix;
+		}
+
+		> .field-item {
+			width:50%;
+			float:left;
+		}
+	}
+
+	.field-name-field-category-link a {
+		@extend %hotspot;
+		display:block;
+		color:$white;
+		text-align: center;
+		padding-top:70px;
+		font-size:36px;
+		background:rgba($black,0.5);
+		text-transform: uppercase;
+
+		&:hover {
+			background-color:transparent;
+		}
+	}
+}
 
 /*
 =====================================================================================
@@ -811,6 +1070,123 @@ WEBFORM
 				opacity:0.7;
 				cursor:pointer; 			
 			}
+		}
+	}
+}
+
+/*
+=====================================================================================
+FIND A DEALER
+=====================================================================================
+*/
+
+.google-store-locator-panel {
+	padding:10px;
+	@media screen and (max-width: $medium) {
+		width:100%;
+		height:auto;
+		margin-bottom:20px;
+	}
+
+	h4 {
+		font-size:26px !important;
+		padding:10px 0 !important;
+		font-family: $bodycopy;
+	}
+
+	#store-store-16 {
+		font-family: $bodycopy;
+		font-size: 20px;
+
+		&:hover {
+			background:rgba(#eee, 0.2);
+		}
+	}
+
+	input {
+		width:100%;
+		height:30px;
+	}
+
+	.highlighted {
+		background:rgba(#ccf,0.5) !important;
+	}
+}
+
+.storelocator-panel .store-list .no-stores {
+	font-family:$bodycopy;
+	color:red;
+}
+
+
+.google-store-locator-map {
+
+	@media screen and (max-width: $medium) {
+		width:100%;
+	}
+
+	.title,
+	.address {
+		color:$black;
+	}
+
+	a.action.directions {
+		display:none;
+	}
+}
+
+/*
+=====================================================================================
+CONTACT
+=====================================================================================
+*/
+
+label {
+	font-family:$bodycopy;
+	padding-bottom:7px;
+	font-size:20px;
+}
+
+input {
+	height:30px;
+}
+
+.form-type-textarea {
+	width:50%;
+}
+
+input#edit-submit {
+	background-color:$gold !important;
+	height:50px;
+	font-size:18px;
+	font-family:$bodycopy;
+	padding:10px 20px;
+	border:none;
+	color:$white;
+}
+
+
+/*
+=====================================================================================
+FOOTER
+=====================================================================================
+*/
+
+#block-views-gallery-block {
+	@extend %fixedwidth;
+
+	.view-content:after {
+		@extend %clearfix;
+	}
+
+	.views-row {
+		width:33.333333%;
+		float:left;
+		padding:10px;
+
+		@media screen and (max-width: $ipad) {
+			width:50%;
+			padding:5px;
 		}
 	}
 }

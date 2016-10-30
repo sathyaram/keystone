@@ -14,8 +14,8 @@ dependencies[] = views_geojson (>=7.x-1.0-beta2)
 dependencies[] = list
 
 ; Information added by Drupal.org packaging script on 2016-08-28
-version = "7.x-1.2"
+version = "7.x-1.1+28-dev"
 core = "7.x"
 project = "google_store_locator"
-datestamp = "1472399640"
+datestamp = "1472398141"
 

@@ -517,6 +517,7 @@ function google_store_locator_uninstall() {
   variable_del('gsl_loc_aware');
   variable_del('gsl_loc_aware_zoom');
   variable_del('gsl_map_style');
+  variable_del('gsl_google_api_key');
 
   // Collect all store nodes that were created when this module was enabled.
   $query = db_select('node', 'n');

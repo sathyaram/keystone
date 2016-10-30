@@ -1,0 +1,69 @@
+diff --git a/google_store_locator.install b/google_store_locator.install
+index d5f533d..9c0ffa2 100644
+--- a/google_store_locator.install
++++ b/google_store_locator.install
+@@ -517,6 +517,7 @@ function google_store_locator_uninstall() {
+   variable_del('gsl_loc_aware');
+   variable_del('gsl_loc_aware_zoom');
+   variable_del('gsl_map_style');
++  variable_del('gsl_google_api_key');
+ 
+   // Collect all store nodes that were created when this module was enabled.
+   $query = db_select('node', 'n');
+diff --git a/google_store_locator.module b/google_store_locator.module
+index 089ae6f..51ecf62 100644
+--- a/google_store_locator.module
++++ b/google_store_locator.module
+@@ -74,6 +74,17 @@ function google_store_locator_admin_form($form, &$form_state) {
+     '#type' => 'item',
+     '#title' => t('Google Store Locator Administrator Settings'),
+   );
++  $form['google_store_locator']['gsl_google_api_key'] = array(
++    '#type' => 'textfield',
++    '#title' => t('Google Maps API key'),
++    '#description' => t(
++      'Google Maps requires an API key to ensure you can use all features. !link.',
++      array('!link' => l('Get API key', 'https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en', array('attributes' => array('target' => '_blank'))))
++    ),
++    '#default_value' => variable_get('gsl_google_api_key', NULL),
++    '#size' => 55,
++    '#required' => TRUE,
++  );
+   $form['google_store_locator']['gsl_title'] = array(
+     '#type' => 'textfield',
+     '#title' => t('What should the title be?'),
+@@ -440,7 +451,7 @@ function theme_google_store_locator_contents($variables) {
+   $output = array(
+     'google_maps_api' => array(
+       '#attached' => array(
+-        'js' => array('//maps.googleapis.com/maps/api/js?sensor=false&libraries=places' => array('type' => 'external')),
++        'js' => array('//maps.googleapis.com/maps/api/js?key=' . google_store_locator_get_google_api_key() . '&libraries=places' => array('type' => 'external')),
+       ),
+     ),
+     // Module is backward compatible with path js/store-locator.compiled.js.
+@@ -621,3 +632,24 @@ function google_store_locator_admin_form_validate($form, &$form_state) {
+     t('Please enter a latitude between -90 and 90'));
+   }
+ }
++
++/**
++ * Retrieve the Google Maps key that is in use for the site.
++ *
++ * Integrates with keys_api and keys module.
++ * If none of these modules are available the config variable gsl_google_api_key
++ * is used.
++ *
++ * @return string|FALSE
++ *   The API Key or FALSE if none is set.
++ */
++function google_store_locator_get_google_api_key() {
++  $key = variable_get('gsl_google_api_key', FALSE);
++  if (module_exists('keys_api')) {
++    $key = keys_api_get_key('gmap', $_SERVER['HTTP_HOST']);
++  }
++  elseif (module_exists('keys')) {
++    $key = keys_get_key('google_maps');
++  }
++  return $key;
++}
+\ No newline at end of file
