@@ -39,8 +39,8 @@
 
       <?php print render($page['header']); ?>
       <div id="social-media-menu">
-        <a href="https://www.facebook.com/keystonemunitions/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/keystonemunitions/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/keystonemunitions" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/keystonemunitions" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
     </header>
     </div>

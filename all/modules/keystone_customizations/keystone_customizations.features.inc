@@ -25,7 +25,7 @@ function keystone_customizations_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 1600,
-          'height' => 300,
+          'height' => 400,
         ),
         'weight' => 1,
       ),
@@ -54,7 +54,7 @@ function keystone_customizations_image_default_styles() {
       6 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => 1800,
+          'width' => 1920,
           'height' => '',
           'upscale' => 0,
         ),

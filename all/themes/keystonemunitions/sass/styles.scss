@@ -15,6 +15,7 @@ $gold:#daa62c;
 $white: #fff;
 $jetblack:#000;
 $black: #111111;
+$blue: #3760dc;
 $grey: #bbbbbb;
 $lightgrey:#f2f2f2;
 $lightblue: #72a1bd;
@@ -23,7 +24,7 @@ $deepblue: #37527d;
 $steelgrey:#292929;
 $brightgold: #e0c26e;
 
-$headline:'KenyanCoffee';
+$headline:'kenyan_coffeeregular';
 $bodycopy: 'Roboto Slab', serif;
 
 /*
@@ -74,7 +75,7 @@ $bodycopy: 'Roboto Slab', serif;
 /*
 ===
 */
-
+/*
 @font-face {
 	font-family: 'KenyanCoffee';
     src: url('../fonts/KenyanCoffee_Normal.ttf');
@@ -101,6 +102,51 @@ $bodycopy: 'Roboto Slab', serif;
     src: url('../fonts/KenyanCoffee_BoldItalic.ttf');
     font-style:italic;
     font-weight:200;
+}
+*/
+@font-face {
+    font-family: 'kenyan_coffeebold';
+    src: url('../fonts/kenyancoffee_bold-webfont.woff2') format('woff2'),
+         url('../fonts/kenyancoffee_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'kenyan_coffeebold_italic';
+    src: url('../fonts/kenyancoffee_bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/kenyancoffee_bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'kenyan_coffeeitalic';
+    src: url('../fonts/kenyancoffee_italic-webfont.woff2') format('woff2'),
+         url('../fonts/kenyancoffee_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'kenyan_coffeeregular';
+    src: url('../fonts/kenyancoffee_normal-webfont.woff2') format('woff2'),
+         url('../fonts/kenyancoffee_normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /*
@@ -163,7 +209,8 @@ table {
 p {
 	font-family:$bodycopy;
 	line-height:1.4;
-	font-size:18px;
+	font-size:20px;
+	letter-spacing: 0.25px;
 }
 
 img {
@@ -175,7 +222,7 @@ img {
 body {
 	width:100%;
 	height:100%;
-	font-family: 'KenyanCoffee';
+	font-family: 'kenyan_coffeeregular';
 	font-style:normal;
 	font-weight:100;
 }
@@ -198,6 +245,28 @@ MISC
 	padding:0 3% !important;
 }
 
+.maintenance-page {
+
+	#logo-title {
+		width:150px;
+		margin: 0 auto;
+		height:130px;
+	}
+
+	h1 {
+		a {
+			opacity:0;
+		}
+	}
+
+	#container {
+		text-align:center;
+	}
+
+	#main {
+		padding-bottom: 50px;
+	}
+}
 /*
 =====================================================================================
 SOCIAL MEDIA
@@ -257,10 +326,22 @@ SOCIAL MEDIA
 MAIN
 =====================================================================================
 */
+.page-contact #main {
+	background-image:url("http://keystonemunitions.com/sites/all/themes/keystonemunitions/images/gun.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
 #main {
-	background-color: #000000;
-	background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+	background:rgba($jetblack,0.95);
+	/*
+	background-image: url("http://keystonemunitions.com/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+	*/
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	
 	color:$white;
 
 	#page-title {
@@ -278,8 +359,11 @@ MAIN
 	.field-name-field-description {
 		font-family:$bodycopy;
 		line-height:1.4;
-		font-size:18px;
+		font-weight: 400;
+		letter-spacing: 0.25px;
+		font-size:20px;
 		@extend %fixedwidth;
+		padding: 0 20px 50px;
 	}
 
 }
@@ -291,7 +375,8 @@ MAIN
 
 
 .page-findadealer #block-system-main,
-.page-contact #block-system-main {
+.page-contact #block-system-main,
+.not-logged-in #block-system-main {
 	padding:50px 20px;
 }
 /*
@@ -304,12 +389,10 @@ HEADER
 	@extend %fixedwidth;
 	padding:50px 20px 0;
 
+
 	h1 {
-		font-size:68px;
-		font-family: $headline;
-		font-weight:100;
-		text-transform: uppercase;
-		display: inline-block;
+		display:none;
+		
 
 		a {
 			color:$white;
@@ -319,11 +402,11 @@ HEADER
 	}
 
 	h2 {
-		color:$grey;
-		font-size:24px;
-		letter-spacing: 1px;
+		font-size:68px;
+		font-family: $headline;
+		font-weight:100;
+		text-transform: uppercase;
 		display: inline-block;
-		padding-left:10px;
 	}
 }
 
@@ -335,9 +418,12 @@ HEADER
 	left:0;
 	width:100%;
 	z-index:9;
+		-webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+	    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
 
 	.region-header {
-		width:756px;
+		width:838px;
 		position: absolute;
     	left: 50%;
     	z-index:999;
@@ -366,6 +452,10 @@ HEADER
 			text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 			opacity:1;
 
+			@media screen and (max-width: $ipad ) {
+				width:90px;
+			}
+
 			&:hover {
 				opacity:0.8;
 			}
@@ -383,7 +473,7 @@ MENU
 #block-system-main-menu {
 	li {
 		display:inline-block;
-		font-size:18px;
+		font-size:22px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		padding:0 10px;
@@ -519,6 +609,21 @@ HERO
 	width:100%;
 	position:relative;
 	height:650px;
+
+	@media screen and (max-width: $ipad) {
+		height:350px;
+	}
+
+	&:after {
+		content:"";
+		position: absolute;
+		background:rgba($black,0.3);
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:5;
+	}
 /*
 	#hero-text {
 		color:$white;
@@ -550,7 +655,7 @@ HERO
 .field-name-field-hero-callout {
 	color:$white;
 	position:absolute;
-	top:45%;
+	top:400px;
 	left:50%;
 	font-size:106px;
 	font-weight:200;
@@ -583,28 +688,45 @@ SHOOTERS BLOCK
 	}
 
 	h3 {
-		font-size: 48px;
-		font-family: "KenyanCoffee";
+		font-size:68px;
+		font-family: $headline;
 		font-weight: 100;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		padding-bottom:20px;
+
+		@media screen and (max-width: $desktop) {
+			font-size:32px;
+		}
 	}
 
 	.views-row {
-		width:25%;
-		float:left;
-		height:auto;
+		width:100%;
+		height:250px;
+		opacity: 0.7;
 
-		@media screen and (max-width: $ipad ) {
-			width:100%;
+		@media screen and (max-width: $ipad) {
+			height:auto;
+		}
+
+		img {
+			height:250px;
+
+			@media screen and (max-width: $desktop) {
+				width:100%;
+				height:auto;
+			}
+		}
+
+		&:hover {
+			opacity:1;
 		}
 	}
 
 	.shooter-wrapper {
 		position:relative;
 		overflow:hidden;
-
+		/*
 		&:hover {
 
 			.name-of-person {
@@ -615,30 +737,49 @@ SHOOTERS BLOCK
 				transform: translateY(-20px);
 			}
 		}
-
+		*/
 		.name-of-person {
 			position:absolute;
 			bottom:0px;
 			font-style:italic;
+
+			/*
 			-moz-transform: translateY(0px);
 			-webkit-transform: translateY(0px);
 			-o-transform: translateY(0px);
 			-ms-transform: translateY(0px);
 			transform: translateY(0px);
+			*/
 			-webkit-transition: all 250ms ease;
 			-moz-transition: all 200ms ease;
 			-ms-transition: all 200ms ease;
 			-o-transition: all 200ms ease;
 			transition: all 200ms ease;
+			/*
 			background:rgba($black,0.5);
+			*/
 			padding:20px;
 			width:100%;
 
 			a {
 				color:$lightgrey;
-				font-size:24px;
-
+				font-size:42px;
+				-webkit-transition: all 250ms ease;
+				-moz-transition: all 200ms ease;
+				-ms-transition: all 200ms ease;
+				-o-transition: all 200ms ease;
+				transition: all 200ms ease;
 			}
+		}
+
+		&:hover {
+			@media screen and (min-width: $ipad) {
+				a {
+					font-weight:bold;
+					font-size:62px;
+				}
+			}
+
 		}
 	}
 }
@@ -724,8 +865,10 @@ AMMUNITION
 =====================================================================================
 */
 // For Range, Competition
-#block-views-ammunitions-block-1 {
+#block-views-ammunitions-block-1,
+#block-views-ammunitions-block {
 	@extend %fixedwidth;
+	max-width:900px !important;
 
 	.views-row {
 		width:100%;
@@ -738,7 +881,8 @@ AMMUNITION
 		}
 
 		.views-label {
-			font-size:24px;
+			font-size:26px;
+			padding-bottom:5px;
 			font-family:$headline;
 		}
 
@@ -754,19 +898,16 @@ AMMUNITION
 
 		.views-field-field-caliber {
 			padding:10px 0;
-			float:left;
 			font-family:$bodycopy;
 		}
 
 		.views-field-field-projectile {
-			padding:10px 20px;
-			float:left;
+			padding:10px 0;
 			font-family:$bodycopy;
 		}
 
 		.views-field-field-velocity {
-			padding:10px 20px;
-			float:left;
+			padding:10px 0;
 			font-family:$bodycopy;
 		}
 
@@ -798,7 +939,7 @@ AMMUNITION
 	}
 }
 
-#block-views-ammunition-block,  {
+#block-views-ammunition-block {
 	@extend %fixedwidth;
 
 	.view-content:after {
@@ -807,10 +948,20 @@ AMMUNITION
 	.views-row {
 		width:50%;
 		float:left;
+
+		@media screen and (max-width: $ipad) {
+			width:100%;
+		}
 	}
 
 	.category-wrapper {
 		position:relative;
+
+		&:hover {
+			img {
+				opacity:0.4;
+			}
+		}
 
 		.category-text {
 			position: absolute;
@@ -822,11 +973,48 @@ AMMUNITION
 			-ms-transform: translateY(-50%) translateX(-50%);
 			transform: translateY(-50%) translateX(-50%);
 
+
 			a {
 				color:$white;
 				text-transform: uppercase;
 				font-size:56px;
 				padding:50px;
+				position: relative;
+				text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+
+				&:hover {
+					font-size:62px;
+					font-weight: bold;
+					-webkit-transition: all 250ms ease;
+					-moz-transition: all 200ms ease;
+					-ms-transition: all 200ms ease;
+					-o-transition: all 200ms ease;
+					transition: all 200ms ease;
+				}
+
+
+
+				&:after {
+					content:"Ammunition";
+					position: absolute;
+					font-family:$bodycopy;
+					top:65%;
+					left:50%;
+					letter-spacing: 1px;
+					font-size:18px;
+					text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+					color:$white;
+					-moz-transform: translateX(-50%);
+					-webkit-transform: translateX(-50%);
+					-o-transform: translateX(-50%);
+					-ms-transform: translateX(-50%);
+					transform: translateX(-50%);
+
+					@media screen and (max-width: $ipad) {
+						top:68%;
+						font-size:14px;
+					}
+				}
 			}
 		}
 	}
@@ -840,6 +1028,27 @@ SHOOTERS
 */
 
 .node-type-shooter {
+
+	#main {
+		position: relative;
+		z-index:5;
+
+		&:after {
+			content:"";
+			position: absolute;
+			background:rgba($black,0.8);
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			z-index:-1;
+
+		}
+	}
+
+	#block-system-main {
+		padding: 50px 20px !important;
+	}
 
 	.content:after {
 		@extend %clearfix;
@@ -895,7 +1104,41 @@ SHOOTERS
 		font-size:16px;
 	}
 
+	.field-name-field-sponsors-of-shooter {
+		.field-item a {
+			width:48%;
+			display:block;
+			border: 3px solid grey;
+			text-align: center;
+			margin:1%;
+			padding:10px;
+			float:left;
+			border-radius:50px;
 
+			&:hover {
+				background:grey;
+				color:$white;
+			}
+
+			@media screen and (max-width: $ipad) {
+				width:98%;
+			}
+		}
+	}
+
+	.field-name-field-instagram-of-shooter a {
+		font-weight:bold;
+		text-transform: uppercase;
+		padding:10px;
+		display:inline-block;
+		border:2px solid $gold;
+
+		&:hover {
+			color:$white;
+			background-color:$gold;
+		}
+
+	}
 
 	a {
 		color:$gold;
@@ -908,6 +1151,10 @@ ACCORDIAN
 =====================================================================================
 */
 
+.ui-widget-content {
+	background: $black;
+	color:$white;
+}
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
 	background:$black;
@@ -930,6 +1177,7 @@ PICTURE GRID
 */
 
 .field-name-field-picture-grid {
+	padding:0.6%;
 
 	.field-items {
 		width:100%;
@@ -941,6 +1189,7 @@ PICTURE GRID
 		.field-item {
 			width:33.3333333%;
 			float:left;
+			padding:0.6%;
 			height:auto;
 
 			@media screen and (max-width: $ipad) {
@@ -979,6 +1228,14 @@ CATEGORY DISPLAY
 		> .field-item {
 			width:50%;
 			float:left;
+
+			@media screen and (max-width: $ipad) {
+				width:100%;
+				border-top:5px solid black;
+				border-bottom:5px solid black;
+				border-left:10px solid black;
+				border-right:10px solid black;
+			}
 		}
 	}
 
@@ -987,14 +1244,68 @@ CATEGORY DISPLAY
 		display:block;
 		color:$white;
 		text-align: center;
-		padding-top:70px;
-		font-size:36px;
+		padding-top:35%;
+		font-size:64px;
 		background:rgba($black,0.5);
 		text-transform: uppercase;
+		text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+		-webkit-transition: all 250ms ease;
+		-moz-transition: all 200ms ease;
+		-ms-transition: all 200ms ease;
+		-o-transition: all 200ms ease;
+		transition: all 200ms ease;
+
+		&:hover {
+			font-size:68px;
+			font-weight:bold;
+		}
+
+		@media screen and (max-width: $medium) {
+			font-size:48px;
+
+				&:hover {
+				font-size:48px;
+				font-weight:bold;
+			}
+
+		}
+
+
+		&:after {
+			content:"Ammunition";
+			position: absolute;
+			font-family:$bodycopy;
+			top:62%;
+			left:50%;
+			letter-spacing: 1px;
+			font-size:24px;
+			text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+			color:$white;
+			-moz-transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+
+			@media screen and (max-width: $medium) {
+				top:62%;
+				font-size:14px;
+			}
+
+			@media screen and (max-width: $ipad) {
+				top:57%;
+			}
+
+			@media screen and (max-width: $galaxys6) {
+				top:63%;
+			}
+		}
 
 		&:hover {
 			background-color:transparent;
 		}
+
+		
 	}
 }
 
@@ -1060,11 +1371,11 @@ WEBFORM
 			border: none;
 			font-family: $bodycopy;
 			text-transform: uppercase;
-			color:$lightgrey;
+			color:$black;
 			font-weight:200;
 			letter-spacing: 1px;
-			padding:10px 20px;
-			background-color:grey;
+			padding:5px 20px;
+			background-color:$gold;
 
 			&:hover {
 				opacity:0.7;
@@ -1088,18 +1399,29 @@ FIND A DEALER
 		margin-bottom:20px;
 	}
 
+	.location-search {
+		padding: 5px 5px 25px;
+	}
+
 	h4 {
 		font-size:26px !important;
 		padding:10px 0 !important;
 		font-family: $bodycopy;
 	}
 
-	#store-store-16 {
+	li.store {
 		font-family: $bodycopy;
 		font-size: 20px;
+		padding: 10px;
+		border-top: 1px solid white;
 
 		&:hover {
-			background:rgba(#eee, 0.2);
+			background:rgba(#eee, 0.2) !important;
+		}
+
+		a {
+			font-family: $bodycopy;
+			color:$gold;
 		}
 	}
 
@@ -1133,6 +1455,17 @@ FIND A DEALER
 	a.action.directions {
 		display:none;
 	}
+
+	.phone {
+		color: $blue;
+	}
+
+	.web {
+		a {
+			color: $gold;
+			font-weight:500;
+		}
+	}
 }
 
 /*
@@ -1149,20 +1482,33 @@ label {
 
 input {
 	height:30px;
+
+	@media screen and (max-width: $ipad) {
+		width:100%;
+	}
+}
+
+#edit-copy {
+	width:initial !important;
 }
 
 .form-type-textarea {
 	width:50%;
+
+	@media screen and (max-width: $ipad) {
+		width:100%;
+	}
 }
 
 input#edit-submit {
 	background-color:$gold !important;
 	height:50px;
-	font-size:18px;
+	font-size:16px;
 	font-family:$bodycopy;
 	padding:10px 20px;
 	border:none;
 	color:$white;
+	cursor:pointer;
 }
 
 

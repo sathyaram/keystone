@@ -6,15 +6,16 @@ VARIABLES
 /*
 ===
 */
-/* line 45, ../sass/styles.scss */
-.tabs, #main #page-title, #main .field-name-field-description, .not-front #block-system-main, .header__name-and-slogan, #block-views-ammunitions-block-1, #block-views-ammunition-block, #block-views-gallery-block {
+/* line 46, ../sass/styles.scss */
+.tabs, #main #page-title, #main .field-name-field-description, .not-front #block-system-main, .header__name-and-slogan, #block-views-ammunitions-block-1,
+#block-views-ammunitions-block, #block-views-ammunition-block, #block-views-gallery-block {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .field-name-field-category-display .field-name-field-category-link a {
   width: 100%;
   height: 100%;
@@ -28,8 +29,9 @@ VARIABLES
   zoom: 1;
 }
 
-/* line 65, ../sass/styles.scss */
-.field-name-field-shooters:after, #block-views-shooters-block .content:after, #block-views-shooters-block-1 .content:after, #block-views-ammunitions-block-1 .views-row:after, #block-views-ammunition-block .view-content:after, .node-type-shooter .content:after, .field-name-field-picture-grid .field-items:after, .field-name-field-category-display:after, .field-name-field-category-display .content:after, .field-name-field-category-display > .field-items:after, #block-views-gallery-block .view-content:after {
+/* line 66, ../sass/styles.scss */
+.field-name-field-shooters:after, #block-views-shooters-block .content:after, #block-views-shooters-block-1 .content:after, #block-views-ammunitions-block-1 .views-row:after,
+#block-views-ammunitions-block .views-row:after, #block-views-ammunition-block .view-content:after, .node-type-shooter .content:after, .field-name-field-picture-grid .field-items:after, .field-name-field-category-display:after, .field-name-field-category-display .content:after, .field-name-field-category-display > .field-items:after, #block-views-gallery-block .view-content:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -41,36 +43,65 @@ VARIABLES
 /*
 ===
 */
+/*
 @font-face {
-  font-family: 'KenyanCoffee';
-  src: url("../fonts/KenyanCoffee_Normal.ttf");
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_Normal.ttf');
+    font-style:normal;
+    font-weight:100;
+}
+
+@font-face {
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_Bold.ttf');
+    font-style:normal;
+    font-weight:200;
+}
+
+@font-face {
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_Italic.ttf');
+    font-style:italic;
+    font-weight:100;
+}
+
+@font-face {
+	font-family: 'KenyanCoffee';
+    src: url('../fonts/KenyanCoffee_BoldItalic.ttf');
+    font-style:italic;
+    font-weight:200;
+}
+*/
+@font-face {
+  font-family: 'kenyan_coffeebold';
+  src: url("../fonts/kenyancoffee_bold-webfont.woff2") format("woff2"), url("../fonts/kenyancoffee_bold-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 100;
 }
 @font-face {
-  font-family: 'KenyanCoffee';
-  src: url("../fonts/KenyanCoffee_Bold.ttf");
+  font-family: 'kenyan_coffeebold_italic';
+  src: url("../fonts/kenyancoffee_bolditalic-webfont.woff2") format("woff2"), url("../fonts/kenyancoffee_bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 200;
 }
 @font-face {
-  font-family: 'KenyanCoffee';
-  src: url("../fonts/KenyanCoffee_Italic.ttf");
-  font-style: italic;
-  font-weight: 100;
+  font-family: 'kenyan_coffeeitalic';
+  src: url("../fonts/kenyancoffee_italic-webfont.woff2") format("woff2"), url("../fonts/kenyancoffee_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'KenyanCoffee';
-  src: url("../fonts/KenyanCoffee_BoldItalic.ttf");
-  font-style: italic;
-  font-weight: 200;
+  font-family: 'kenyan_coffeeregular';
+  src: url("../fonts/kenyancoffee_normal-webfont.woff2") format("woff2"), url("../fonts/kenyancoffee_normal-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 /*
 =====================================================================================
 RESET
 =====================================================================================
 */
-/* line 112, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -94,66 +125,67 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 134, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 body {
   line-height: 1;
 }
 
-/* line 141, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 147, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 152, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 157, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 163, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 p {
   font-family: "Roboto Slab", serif;
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 0.25px;
 }
 
-/* line 169, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 175, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 body {
   width: 100%;
   height: 100%;
-  font-family: 'KenyanCoffee';
+  font-family: 'kenyan_coffeeregular';
   font-style: normal;
   font-weight: 100;
 }
@@ -163,15 +195,34 @@ body {
 MISC
 =====================================================================================
 */
-/* line 190, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 .breadcrumb, .front #page-title, .not-front .header__name-and-slogan {
   display: none;
 }
 
-/* line 195, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
 .tabs {
   margin: 0 auto !important;
   padding: 0 3% !important;
+}
+
+/* line 250, ../sass/styles.scss */
+.maintenance-page #logo-title {
+  width: 150px;
+  margin: 0 auto;
+  height: 130px;
+}
+/* line 257, ../sass/styles.scss */
+.maintenance-page h1 a {
+  opacity: 0;
+}
+/* line 262, ../sass/styles.scss */
+.maintenance-page #container {
+  text-align: center;
+}
+/* line 266, ../sass/styles.scss */
+.maintenance-page #main {
+  padding-bottom: 50px;
 }
 
 /*
@@ -179,7 +230,7 @@ MISC
 SOCIAL MEDIA
 =====================================================================================
 */
-/* line 208, ../sass/styles.scss */
+/* line 277, ../sass/styles.scss */
 #social-media-menu {
   position: absolute;
   top: 50%;
@@ -201,21 +252,21 @@ SOCIAL MEDIA
   		}
   		*/
 }
-/* line 218, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
 #social-media-menu a {
   display: block;
   margin: 5px;
   text-align: center;
 }
-/* line 225, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 #social-media-menu .fa-facebook {
   background-color: #3B5998;
 }
-/* line 229, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 #social-media-menu .fa-instagram {
   background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
 }
-/* line 233, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 #social-media-menu i {
   font-size: 16px;
   color: #f2f2f2;
@@ -229,40 +280,54 @@ SOCIAL MEDIA
 MAIN
 =====================================================================================
 */
-/* line 260, ../sass/styles.scss */
+/* line 329, ../sass/styles.scss */
+.page-contact #main {
+  background-image: url("http://keystonemunitions.com/sites/all/themes/keystonemunitions/images/gun.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 338, ../sass/styles.scss */
 #main {
-  background-color: #000000;
-  background-image: url("http://keystonemunitions.dd:8083/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+  background: rgba(0, 0, 0, 0.95);
+  /*
+  background-image: url("http://keystonemunitions.com/sites/all/themes/keystonemunitions/images/rocky-wall.png");
+  */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   color: #fff;
 }
-/* line 266, ../sass/styles.scss */
+/* line 347, ../sass/styles.scss */
 #main #page-title {
   padding: 60px 20px 0;
   text-transform: uppercase;
   font-size: 58px;
 }
 @media screen and (max-width: 460px) {
-  /* line 266, ../sass/styles.scss */
+  /* line 347, ../sass/styles.scss */
   #main #page-title {
     font-size: 38px;
   }
 }
-/* line 278, ../sass/styles.scss */
+/* line 359, ../sass/styles.scss */
 #main .field-name-field-description {
   font-family: "Roboto Slab", serif;
   line-height: 1.4;
-  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  font-size: 20px;
+  padding: 0 20px 50px;
 }
 
-/* line 287, ../sass/styles.scss */
+/* line 371, ../sass/styles.scss */
 .not-front #block-system-main {
   padding: 0;
 }
 
-/* line 293, ../sass/styles.scss */
+/* line 377, ../sass/styles.scss */
 .page-findadealer #block-system-main,
-.page-contact #block-system-main {
+.page-contact #block-system-main,
+.not-logged-in #block-system-main {
   padding: 50px 20px;
 }
 
@@ -271,32 +336,28 @@ MAIN
 HEADER
 =====================================================================================
 */
-/* line 303, ../sass/styles.scss */
+/* line 388, ../sass/styles.scss */
 .header__name-and-slogan {
   padding: 50px 20px 0;
 }
-/* line 307, ../sass/styles.scss */
+/* line 393, ../sass/styles.scss */
 .header__name-and-slogan h1 {
+  display: none;
+}
+/* line 397, ../sass/styles.scss */
+.header__name-and-slogan h1 a {
+  color: #fff;
+}
+/* line 404, ../sass/styles.scss */
+.header__name-and-slogan h2 {
   font-size: 68px;
-  font-family: "KenyanCoffee";
+  font-family: "kenyan_coffeeregular";
   font-weight: 100;
   text-transform: uppercase;
   display: inline-block;
 }
-/* line 314, ../sass/styles.scss */
-.header__name-and-slogan h1 a {
-  color: #fff;
-}
-/* line 321, ../sass/styles.scss */
-.header__name-and-slogan h2 {
-  color: #bbbbbb;
-  font-size: 24px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding-left: 10px;
-}
 
-/* line 330, ../sass/styles.scss */
+/* line 413, ../sass/styles.scss */
 #header-wrapper {
   background: rgba(0, 0, 0, 0.95);
   height: 80px;
@@ -305,10 +366,13 @@ HEADER
   left: 0;
   width: 100%;
   z-index: 9;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 339, ../sass/styles.scss */
+/* line 425, ../sass/styles.scss */
 #header-wrapper .region-header {
-  width: 756px;
+  width: 838px;
   position: absolute;
   left: 50%;
   z-index: 999;
@@ -319,7 +383,7 @@ HEADER
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 353, ../sass/styles.scss */
+/* line 439, ../sass/styles.scss */
 #header-wrapper a#logo {
   position: absolute;
   z-index: 9999;
@@ -330,14 +394,20 @@ HEADER
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 363, ../sass/styles.scss */
+/* line 449, ../sass/styles.scss */
 #header-wrapper a#logo img {
   width: 106px;
   height: auto;
   text-shadow: 0px 0px 10px black;
   opacity: 1;
 }
-/* line 369, ../sass/styles.scss */
+@media screen and (max-width: 768px) {
+  /* line 449, ../sass/styles.scss */
+  #header-wrapper a#logo img {
+    width: 90px;
+  }
+}
+/* line 459, ../sass/styles.scss */
 #header-wrapper a#logo img:hover {
   opacity: 0.8;
 }
@@ -347,22 +417,22 @@ HEADER
 MENU
 =====================================================================================
 */
-/* line 384, ../sass/styles.scss */
+/* line 474, ../sass/styles.scss */
 #block-system-main-menu li {
   display: inline-block;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0 10px;
 }
 @media screen and (max-width: 800px) {
-  /* line 384, ../sass/styles.scss */
+  /* line 474, ../sass/styles.scss */
   #block-system-main-menu li {
     font-family: "Roboto Slab", serif;
     font-weight: 400;
   }
 }
-/* line 396, ../sass/styles.scss */
+/* line 486, ../sass/styles.scss */
 #block-system-main-menu li a {
   color: #f2f2f2;
   padding: 5px 0;
@@ -384,7 +454,7 @@ MENU
   position: relative;
   overflow: hidden;
 }
-/* line 417, ../sass/styles.scss */
+/* line 507, ../sass/styles.scss */
 #block-system-main-menu li a:before {
   content: "";
   position: absolute;
@@ -401,27 +471,27 @@ MENU
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 434, ../sass/styles.scss */
+/* line 524, ../sass/styles.scss */
 #block-system-main-menu li a:hover:before, #block-system-main-menu li a:focus:before, #block-system-main-menu li a:active:before {
   left: 0;
   right: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 396, ../sass/styles.scss */
+  /* line 486, ../sass/styles.scss */
   #block-system-main-menu li a {
     padding: 20px 0px;
   }
 }
-/* line 444, ../sass/styles.scss */
+/* line 534, ../sass/styles.scss */
 #block-system-main-menu li a:hover {
   color: #e0c26e;
 }
-/* line 450, ../sass/styles.scss */
+/* line 540, ../sass/styles.scss */
 #block-system-main-menu li:nth-child(4) {
   margin-left: 150px;
 }
 @media screen and (max-width: 800px) {
-  /* line 450, ../sass/styles.scss */
+  /* line 540, ../sass/styles.scss */
   #block-system-main-menu li:nth-child(4) {
     margin: 0;
   }
@@ -432,7 +502,7 @@ MENU
 MEAN MENU
 =====================================================================================
 */
-/* line 465, ../sass/styles.scss */
+/* line 555, ../sass/styles.scss */
 .mean-container .mean-bar {
   width: 80px;
   height: 80px;
@@ -441,7 +511,7 @@ MEAN MENU
   z-index: 13;
 }
 
-/* line 473, ../sass/styles.scss */
+/* line 563, ../sass/styles.scss */
 a.meanmenu-reveal.meanclose {
   top: 10px;
   font-weight: 400;
@@ -449,21 +519,21 @@ a.meanmenu-reveal.meanclose {
   font-family: "Roboto Slab", serif;
 }
 
-/* line 480, ../sass/styles.scss */
+/* line 570, ../sass/styles.scss */
 .mean-container a.meanmenu-reveal span {
   background: #111111;
   height: 4px;
   margin-top: 8px;
 }
 
-/* line 486, ../sass/styles.scss */
+/* line 576, ../sass/styles.scss */
 .mean-container a.meanmenu-reveal {
   width: 40px;
   height: 51px;
   padding: 17px 20px 12px;
 }
 
-/* line 492, ../sass/styles.scss */
+/* line 582, ../sass/styles.scss */
 .mean-container .mean-nav {
   width: 100vw;
   margin-top: 80px;
@@ -471,12 +541,12 @@ a.meanmenu-reveal.meanclose {
   text-align: center;
 }
 
-/* line 503, ../sass/styles.scss */
+/* line 593, ../sass/styles.scss */
 .mean-container .mean-nav ul li {
   float: none;
 }
 
-/* line 507, ../sass/styles.scss */
+/* line 597, ../sass/styles.scss */
 .mean-container .mean-nav ul li a {
   width: 100%;
 }
@@ -486,7 +556,7 @@ a.meanmenu-reveal.meanclose {
 HERO
 =====================================================================================
 */
-/* line 518, ../sass/styles.scss */
+/* line 608, ../sass/styles.scss */
 #hero {
   width: 100%;
   position: relative;
@@ -518,12 +588,29 @@ HERO
   	}
   */
 }
+@media screen and (max-width: 768px) {
+  /* line 608, ../sass/styles.scss */
+  #hero {
+    height: 350px;
+  }
+}
+/* line 617, ../sass/styles.scss */
+#hero:after {
+  content: "";
+  position: absolute;
+  background: rgba(17, 17, 17, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
 
-/* line 550, ../sass/styles.scss */
+/* line 655, ../sass/styles.scss */
 .field-name-field-hero-callout {
   color: #fff;
   position: absolute;
-  top: 45%;
+  top: 400px;
   left: 50%;
   font-size: 106px;
   font-weight: 200;
@@ -541,77 +628,118 @@ HERO
 SHOOTERS BLOCK
 =====================================================================================
 */
-/* line 575, ../sass/styles.scss */
+/* line 680, ../sass/styles.scss */
 .field-name-field-shooters {
   max-width: 1200px;
   padding: 50px 20px;
   width: 100%;
   margin: 0 auto;
 }
-/* line 585, ../sass/styles.scss */
+/* line 690, ../sass/styles.scss */
 .field-name-field-shooters h3 {
-  font-size: 48px;
-  font-family: "KenyanCoffee";
+  font-size: 68px;
+  font-family: "kenyan_coffeeregular";
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-bottom: 20px;
 }
-/* line 594, ../sass/styles.scss */
-.field-name-field-shooters .views-row {
-  width: 25%;
-  float: left;
-  height: auto;
-}
-@media screen and (max-width: 768px) {
-  /* line 594, ../sass/styles.scss */
-  .field-name-field-shooters .views-row {
-    width: 100%;
+@media screen and (max-width: 980px) {
+  /* line 690, ../sass/styles.scss */
+  .field-name-field-shooters h3 {
+    font-size: 32px;
   }
 }
-/* line 604, ../sass/styles.scss */
+/* line 703, ../sass/styles.scss */
+.field-name-field-shooters .views-row {
+  width: 100%;
+  height: 250px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  /* line 703, ../sass/styles.scss */
+  .field-name-field-shooters .views-row {
+    height: auto;
+  }
+}
+/* line 712, ../sass/styles.scss */
+.field-name-field-shooters .views-row img {
+  height: 250px;
+}
+@media screen and (max-width: 980px) {
+  /* line 712, ../sass/styles.scss */
+  .field-name-field-shooters .views-row img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 721, ../sass/styles.scss */
+.field-name-field-shooters .views-row:hover {
+  opacity: 1;
+}
+/* line 726, ../sass/styles.scss */
 .field-name-field-shooters .shooter-wrapper {
   position: relative;
   overflow: hidden;
+  		/*
+  		&:hover {
+  
+  			.name-of-person {
+  				-moz-transform: translateY(-20px);
+  				-webkit-transform: translateY(-20px);
+  				-o-transform: translateY(-20px);
+  				-ms-transform: translateY(-20px);
+  				transform: translateY(-20px);
+  			}
+  		}
+  		*/
 }
-/* line 610, ../sass/styles.scss */
-.field-name-field-shooters .shooter-wrapper:hover .name-of-person {
-  -moz-transform: translateY(-20px);
-  -webkit-transform: translateY(-20px);
-  -o-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px);
-}
-/* line 619, ../sass/styles.scss */
+/* line 741, ../sass/styles.scss */
 .field-name-field-shooters .shooter-wrapper .name-of-person {
   position: absolute;
   bottom: 0px;
   font-style: italic;
+  /*
   -moz-transform: translateY(0px);
   -webkit-transform: translateY(0px);
   -o-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
+  */
   -webkit-transition: all 250ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
-  background: rgba(17, 17, 17, 0.5);
+  /*
+  background:rgba($black,0.5);
+  */
   padding: 20px;
   width: 100%;
 }
-/* line 637, ../sass/styles.scss */
+/* line 764, ../sass/styles.scss */
 .field-name-field-shooters .shooter-wrapper .name-of-person a {
   color: #f2f2f2;
-  font-size: 24px;
+  font-size: 42px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+@media screen and (min-width: 768px) {
+  /* line 777, ../sass/styles.scss */
+  .field-name-field-shooters .shooter-wrapper:hover a {
+    font-weight: bold;
+    font-size: 62px;
+  }
 }
 
-/* line 646, ../sass/styles.scss */
+/* line 787, ../sass/styles.scss */
 #block-views-shooters-block, #block-views-shooters-block-1 {
   background-color: #060405;
 }
-/* line 649, ../sass/styles.scss */
+/* line 790, ../sass/styles.scss */
 #block-views-shooters-block h3, #block-views-shooters-block-1 h3 {
   font-size: 48px;
   font-family: "KenyanCoffee";
@@ -620,31 +748,31 @@ SHOOTERS BLOCK
   letter-spacing: 2px;
   padding-bottom: 20px;
 }
-/* line 658, ../sass/styles.scss */
+/* line 799, ../sass/styles.scss */
 #block-views-shooters-block .content, #block-views-shooters-block-1 .content {
   max-width: 1200px;
   padding: 50px 20px;
   width: 100%;
   margin: 0 auto;
 }
-/* line 668, ../sass/styles.scss */
+/* line 809, ../sass/styles.scss */
 #block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
   width: 25%;
   float: left;
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 668, ../sass/styles.scss */
+  /* line 809, ../sass/styles.scss */
   #block-views-shooters-block .content .views-row, #block-views-shooters-block-1 .content .views-row {
     width: 100%;
   }
 }
-/* line 679, ../sass/styles.scss */
+/* line 820, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper, #block-views-shooters-block-1 .shooter-wrapper {
   position: relative;
   overflow: hidden;
 }
-/* line 685, ../sass/styles.scss */
+/* line 826, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper:hover .name-of-person, #block-views-shooters-block-1 .shooter-wrapper:hover .name-of-person {
   -moz-transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
@@ -652,7 +780,7 @@ SHOOTERS BLOCK
   -ms-transform: translateY(-20px);
   transform: translateY(-20px);
 }
-/* line 694, ../sass/styles.scss */
+/* line 835, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper .name-of-person, #block-views-shooters-block-1 .shooter-wrapper .name-of-person {
   position: absolute;
   bottom: 0px;
@@ -671,7 +799,7 @@ SHOOTERS BLOCK
   padding: 20px;
   width: 100%;
 }
-/* line 712, ../sass/styles.scss */
+/* line 853, ../sass/styles.scss */
 #block-views-shooters-block .shooter-wrapper .name-of-person a, #block-views-shooters-block-1 .shooter-wrapper .name-of-person a {
   color: #f2f2f2;
   font-size: 24px;
@@ -682,81 +810,107 @@ SHOOTERS BLOCK
 AMMUNITION
 =====================================================================================
 */
-/* line 730, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row {
+/* line 868, ../sass/styles.scss */
+#block-views-ammunitions-block-1,
+#block-views-ammunitions-block {
+  max-width: 900px !important;
+}
+/* line 873, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row,
+#block-views-ammunitions-block .views-row {
   width: 100%;
   border-top: 1px solid #fff;
   height: auto;
   padding: 20px 0;
 }
-/* line 740, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-label {
-  font-size: 24px;
-  font-family: "KenyanCoffee";
+/* line 883, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-label,
+#block-views-ammunitions-block .views-row .views-label {
+  font-size: 26px;
+  padding-bottom: 5px;
+  font-family: "kenyan_coffeeregular";
 }
-/* line 745, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-title {
+/* line 889, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-title,
+#block-views-ammunitions-block .views-row .views-field-title {
   font-size: 52px;
   font-weight: 200;
   text-transform: uppercase;
 }
-/* line 751, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-field-tagline {
+/* line 895, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-tagline,
+#block-views-ammunitions-block .views-row .views-field-field-tagline {
   font-family: "Roboto Slab", serif;
 }
-/* line 755, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-field-caliber {
+/* line 899, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-caliber,
+#block-views-ammunitions-block .views-row .views-field-field-caliber {
   padding: 10px 0;
-  float: left;
   font-family: "Roboto Slab", serif;
 }
-/* line 761, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-field-projectile {
-  padding: 10px 20px;
-  float: left;
+/* line 904, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-projectile,
+#block-views-ammunitions-block .views-row .views-field-field-projectile {
+  padding: 10px 0;
   font-family: "Roboto Slab", serif;
 }
-/* line 767, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-field-velocity {
-  padding: 10px 20px;
-  float: left;
+/* line 909, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-velocity,
+#block-views-ammunitions-block .views-row .views-field-field-velocity {
+  padding: 10px 0;
   font-family: "Roboto Slab", serif;
 }
-/* line 773, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-field-photos {
+/* line 914, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-photos,
+#block-views-ammunitions-block .views-row .views-field-field-photos {
   width: 40%;
   float: right;
 }
 @media screen and (max-width: 768px) {
-  /* line 773, ../sass/styles.scss */
-  #block-views-ammunitions-block-1 .views-row .views-field-field-photos {
+  /* line 914, ../sass/styles.scss */
+  #block-views-ammunitions-block-1 .views-row .views-field-field-photos,
+  #block-views-ammunitions-block .views-row .views-field-field-photos {
     width: 100%;
     float: left;
     padding-top: 20px;
   }
 }
-/* line 785, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:not(:nth-child(1)) {
+/* line 926, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:not(:nth-child(1)),
+#block-views-ammunitions-block .views-row .views-field-field-photos ul li:not(:nth-child(1)) {
   margin: 2.5% 0;
   width: calc(23.125%);
   height: auto;
   float: left;
 }
-/* line 793, ../sass/styles.scss */
-#block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(3), #block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(4), #block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(5) {
+/* line 934, ../sass/styles.scss */
+#block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(3), #block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(4), #block-views-ammunitions-block-1 .views-row .views-field-field-photos ul li:nth-child(5),
+#block-views-ammunitions-block .views-row .views-field-field-photos ul li:nth-child(3),
+#block-views-ammunitions-block .views-row .views-field-field-photos ul li:nth-child(4),
+#block-views-ammunitions-block .views-row .views-field-field-photos ul li:nth-child(5) {
   margin-left: 2.5%;
 }
 
-/* line 807, ../sass/styles.scss */
+/* line 948, ../sass/styles.scss */
 #block-views-ammunition-block .views-row {
   width: 50%;
   float: left;
 }
-/* line 812, ../sass/styles.scss */
+@media screen and (max-width: 768px) {
+  /* line 948, ../sass/styles.scss */
+  #block-views-ammunition-block .views-row {
+    width: 100%;
+  }
+}
+/* line 957, ../sass/styles.scss */
 #block-views-ammunition-block .category-wrapper {
   position: relative;
 }
-/* line 815, ../sass/styles.scss */
+/* line 961, ../sass/styles.scss */
+#block-views-ammunition-block .category-wrapper:hover img {
+  opacity: 0.4;
+}
+/* line 966, ../sass/styles.scss */
 #block-views-ammunition-block .category-wrapper .category-text {
   position: absolute;
   top: 50%;
@@ -767,12 +921,48 @@ AMMUNITION
   -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
 }
-/* line 825, ../sass/styles.scss */
+/* line 977, ../sass/styles.scss */
 #block-views-ammunition-block .category-wrapper .category-text a {
   color: #fff;
   text-transform: uppercase;
   font-size: 56px;
   padding: 50px;
+  position: relative;
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+}
+/* line 985, ../sass/styles.scss */
+#block-views-ammunition-block .category-wrapper .category-text a:hover {
+  font-size: 62px;
+  font-weight: bold;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+/* line 997, ../sass/styles.scss */
+#block-views-ammunition-block .category-wrapper .category-text a:after {
+  content: "Ammunition";
+  position: absolute;
+  font-family: "Roboto Slab", serif;
+  top: 65%;
+  left: 50%;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  /* line 997, ../sass/styles.scss */
+  #block-views-ammunition-block .category-wrapper .category-text a:after {
+    top: 68%;
+    font-size: 14px;
+  }
 }
 
 /*
@@ -780,26 +970,46 @@ AMMUNITION
 SHOOTERS
 =====================================================================================
 */
-/* line 848, ../sass/styles.scss */
+/* line 1032, ../sass/styles.scss */
+.node-type-shooter #main {
+  position: relative;
+  z-index: 5;
+}
+/* line 1036, ../sass/styles.scss */
+.node-type-shooter #main:after {
+  content: "";
+  position: absolute;
+  background: rgba(17, 17, 17, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* line 1049, ../sass/styles.scss */
+.node-type-shooter #block-system-main {
+  padding: 50px 20px !important;
+}
+/* line 1057, ../sass/styles.scss */
 .node-type-shooter .field-name-field-photo-of-shooter {
   float: left;
   width: 35%;
   margin-right: 30px;
 }
 @media screen and (max-width: 800px) {
-  /* line 853, ../sass/styles.scss */
+  /* line 1062, ../sass/styles.scss */
   .node-type-shooter .field-name-field-photo-of-shooter img {
     width: 80%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 848, ../sass/styles.scss */
+  /* line 1057, ../sass/styles.scss */
   .node-type-shooter .field-name-field-photo-of-shooter {
     width: 100%;
     padding: 0 0 20px;
   }
 }
-/* line 866, ../sass/styles.scss */
+/* line 1075, ../sass/styles.scss */
 .node-type-shooter .field-name-field-description-of-shooter,
 .node-type-shooter .field-name-field-hometown-of-shooter,
 .node-type-shooter .field-name-field-homerange-of-shooter,
@@ -815,7 +1025,7 @@ SHOOTERS
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 866, ../sass/styles.scss */
+  /* line 1075, ../sass/styles.scss */
   .node-type-shooter .field-name-field-description-of-shooter,
   .node-type-shooter .field-name-field-hometown-of-shooter,
   .node-type-shooter .field-name-field-homerange-of-shooter,
@@ -827,20 +1037,55 @@ SHOOTERS
     width: 100%;
   }
 }
-/* line 885, ../sass/styles.scss */
+/* line 1094, ../sass/styles.scss */
 .node-type-shooter .field-name-field-description-of-shooter {
   font-family: "Roboto Slab", serif;
   font-size: 20px;
   padding: 0;
 }
-/* line 891, ../sass/styles.scss */
+/* line 1100, ../sass/styles.scss */
 .node-type-shooter .field-label {
   font-family: "Roboto Slab", serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
 }
-/* line 900, ../sass/styles.scss */
+/* line 1108, ../sass/styles.scss */
+.node-type-shooter .field-name-field-sponsors-of-shooter .field-item a {
+  width: 48%;
+  display: block;
+  border: 3px solid grey;
+  text-align: center;
+  margin: 1%;
+  padding: 10px;
+  float: left;
+  border-radius: 50px;
+}
+/* line 1118, ../sass/styles.scss */
+.node-type-shooter .field-name-field-sponsors-of-shooter .field-item a:hover {
+  background: grey;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  /* line 1108, ../sass/styles.scss */
+  .node-type-shooter .field-name-field-sponsors-of-shooter .field-item a {
+    width: 98%;
+  }
+}
+/* line 1129, ../sass/styles.scss */
+.node-type-shooter .field-name-field-instagram-of-shooter a {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid #daa62c;
+}
+/* line 1136, ../sass/styles.scss */
+.node-type-shooter .field-name-field-instagram-of-shooter a:hover {
+  color: #fff;
+  background-color: #daa62c;
+}
+/* line 1143, ../sass/styles.scss */
 .node-type-shooter a {
   color: #daa62c;
 }
@@ -850,17 +1095,23 @@ SHOOTERS
 ACCORDIAN
 =====================================================================================
 */
-/* line 912, ../sass/styles.scss */
+/* line 1154, ../sass/styles.scss */
+.ui-widget-content {
+  background: #111111;
+  color: #fff;
+}
+
+/* line 1159, ../sass/styles.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   background: #111111;
   font-family: "Roboto Slab", serif;
 }
-/* line 916, ../sass/styles.scss */
+/* line 1163, ../sass/styles.scss */
 .ui-state-default a, .ui-widget-content .ui-state-default a, .ui-widget-header .ui-state-default a {
   color: #fff !important;
 }
 
-/* line 922, ../sass/styles.scss */
+/* line 1169, ../sass/styles.scss */
 .ui-accordion .ui-accordion-header {
   margin-top: 8px !important;
 }
@@ -870,18 +1121,23 @@ ACCORDIAN
 PICTURE GRID
 =====================================================================================
 */
-/* line 934, ../sass/styles.scss */
+/* line 1179, ../sass/styles.scss */
+.field-name-field-picture-grid {
+  padding: 0.6%;
+}
+/* line 1182, ../sass/styles.scss */
 .field-name-field-picture-grid .field-items {
   width: 100%;
 }
-/* line 941, ../sass/styles.scss */
+/* line 1189, ../sass/styles.scss */
 .field-name-field-picture-grid .field-items .field-item {
   width: 33.3333333%;
   float: left;
+  padding: 0.6%;
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 941, ../sass/styles.scss */
+  /* line 1189, ../sass/styles.scss */
   .field-name-field-picture-grid .field-items .field-item {
     width: 50%;
   }
@@ -892,26 +1148,94 @@ PICTURE GRID
 CATEGORY DISPLAY
 =====================================================================================
 */
-/* line 965, ../sass/styles.scss */
+/* line 1214, ../sass/styles.scss */
 .field-name-field-category-display .content {
   position: relative;
 }
-/* line 979, ../sass/styles.scss */
+/* line 1228, ../sass/styles.scss */
 .field-name-field-category-display > .field-items > .field-item {
   width: 50%;
   float: left;
 }
-/* line 985, ../sass/styles.scss */
+@media screen and (max-width: 768px) {
+  /* line 1228, ../sass/styles.scss */
+  .field-name-field-category-display > .field-items > .field-item {
+    width: 100%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+  }
+}
+/* line 1242, ../sass/styles.scss */
 .field-name-field-category-display .field-name-field-category-link a {
   display: block;
   color: #fff;
   text-align: center;
-  padding-top: 70px;
-  font-size: 36px;
+  padding-top: 35%;
+  font-size: 64px;
   background: rgba(17, 17, 17, 0.5);
   text-transform: uppercase;
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
-/* line 995, ../sass/styles.scss */
+/* line 1258, ../sass/styles.scss */
+.field-name-field-category-display .field-name-field-category-link a:hover {
+  font-size: 68px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1080px) {
+  /* line 1242, ../sass/styles.scss */
+  .field-name-field-category-display .field-name-field-category-link a {
+    font-size: 48px;
+  }
+  /* line 1266, ../sass/styles.scss */
+  .field-name-field-category-display .field-name-field-category-link a:hover {
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+/* line 1274, ../sass/styles.scss */
+.field-name-field-category-display .field-name-field-category-link a:after {
+  content: "Ammunition";
+  position: absolute;
+  font-family: "Roboto Slab", serif;
+  top: 62%;
+  left: 50%;
+  letter-spacing: 1px;
+  font-size: 24px;
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 1080px) {
+  /* line 1274, ../sass/styles.scss */
+  .field-name-field-category-display .field-name-field-category-link a:after {
+    top: 62%;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 1274, ../sass/styles.scss */
+  .field-name-field-category-display .field-name-field-category-link a:after {
+    top: 57%;
+  }
+}
+@media screen and (max-width: 580px) {
+  /* line 1274, ../sass/styles.scss */
+  .field-name-field-category-display .field-name-field-category-link a:after {
+    top: 63%;
+  }
+}
+/* line 1304, ../sass/styles.scss */
 .field-name-field-category-display .field-name-field-category-link a:hover {
   background-color: transparent;
 }
@@ -921,7 +1245,7 @@ CATEGORY DISPLAY
 WEBFORM
 =====================================================================================
 */
-/* line 1007, ../sass/styles.scss */
+/* line 1318, ../sass/styles.scss */
 #block-views-webform-block {
   background-color: #1a1a1a;
   float: left;
@@ -930,7 +1254,7 @@ WEBFORM
   text-align: center;
   box-sizing: border-box;
 }
-/* line 1015, ../sass/styles.scss */
+/* line 1326, ../sass/styles.scss */
 #block-views-webform-block .views-field-title {
   font-weight: 100;
   font-size: 56px;
@@ -939,11 +1263,11 @@ WEBFORM
   font-style: italic;
   letter-spacing: 5px;
 }
-/* line 1025, ../sass/styles.scss */
+/* line 1336, ../sass/styles.scss */
 #block-views-webform-block .content {
   margin: 0 auto;
 }
-/* line 1029, ../sass/styles.scss */
+/* line 1340, ../sass/styles.scss */
 #block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
   display: inline-block;
   color: #bbbbbb;
@@ -955,14 +1279,14 @@ WEBFORM
   letter-spacing: 1px;
 }
 @media screen and (max-width: 460px) {
-  /* line 1029, ../sass/styles.scss */
+  /* line 1340, ../sass/styles.scss */
   #block-views-webform-block .content .form-item.webform-component.webform-component-email.webform-component--your-email label {
     padding: 0;
     padding-bottom: 10px;
     display: inherit;
   }
 }
-/* line 1048, ../sass/styles.scss */
+/* line 1359, ../sass/styles.scss */
 #block-views-webform-block .content input#edit-submitted-your-email {
   background-color: #2D2D2D;
   border: none;
@@ -970,23 +1294,23 @@ WEBFORM
   color: white;
 }
 @media screen and (max-width: 460px) {
-  /* line 1048, ../sass/styles.scss */
+  /* line 1359, ../sass/styles.scss */
   #block-views-webform-block .content input#edit-submitted-your-email {
     width: 100%;
   }
 }
-/* line 1059, ../sass/styles.scss */
+/* line 1370, ../sass/styles.scss */
 #block-views-webform-block .content input.webform-submit.button-primary.form-submit {
   border: none;
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
-  color: #f2f2f2;
+  color: #111111;
   font-weight: 200;
   letter-spacing: 1px;
-  padding: 10px 20px;
-  background-color: grey;
+  padding: 5px 20px;
+  background-color: #daa62c;
 }
-/* line 1069, ../sass/styles.scss */
+/* line 1380, ../sass/styles.scss */
 #block-views-webform-block .content input.webform-submit.button-primary.form-submit:hover {
   opacity: 0.7;
   cursor: pointer;
@@ -997,63 +1321,83 @@ WEBFORM
 FIND A DEALER
 =====================================================================================
 */
-/* line 1083, ../sass/styles.scss */
+/* line 1394, ../sass/styles.scss */
 .google-store-locator-panel {
   padding: 10px;
 }
 @media screen and (max-width: 1080px) {
-  /* line 1083, ../sass/styles.scss */
+  /* line 1394, ../sass/styles.scss */
   .google-store-locator-panel {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
 }
-/* line 1091, ../sass/styles.scss */
+/* line 1402, ../sass/styles.scss */
+.google-store-locator-panel .location-search {
+  padding: 5px 5px 25px;
+}
+/* line 1406, ../sass/styles.scss */
 .google-store-locator-panel h4 {
   font-size: 26px !important;
   padding: 10px 0 !important;
   font-family: "Roboto Slab", serif;
 }
-/* line 1097, ../sass/styles.scss */
-.google-store-locator-panel #store-store-16 {
+/* line 1412, ../sass/styles.scss */
+.google-store-locator-panel li.store {
   font-family: "Roboto Slab", serif;
   font-size: 20px;
+  padding: 10px;
+  border-top: 1px solid white;
 }
-/* line 1101, ../sass/styles.scss */
-.google-store-locator-panel #store-store-16:hover {
-  background: rgba(238, 238, 238, 0.2);
+/* line 1418, ../sass/styles.scss */
+.google-store-locator-panel li.store:hover {
+  background: rgba(238, 238, 238, 0.2) !important;
 }
-/* line 1106, ../sass/styles.scss */
+/* line 1422, ../sass/styles.scss */
+.google-store-locator-panel li.store a {
+  font-family: "Roboto Slab", serif;
+  color: #daa62c;
+}
+/* line 1428, ../sass/styles.scss */
 .google-store-locator-panel input {
   width: 100%;
   height: 30px;
 }
-/* line 1111, ../sass/styles.scss */
+/* line 1433, ../sass/styles.scss */
 .google-store-locator-panel .highlighted {
   background: rgba(204, 204, 255, 0.5) !important;
 }
 
-/* line 1116, ../sass/styles.scss */
+/* line 1438, ../sass/styles.scss */
 .storelocator-panel .store-list .no-stores {
   font-family: "Roboto Slab", serif;
   color: red;
 }
 
 @media screen and (max-width: 1080px) {
-  /* line 1122, ../sass/styles.scss */
+  /* line 1444, ../sass/styles.scss */
   .google-store-locator-map {
     width: 100%;
   }
 }
-/* line 1128, ../sass/styles.scss */
+/* line 1450, ../sass/styles.scss */
 .google-store-locator-map .title,
 .google-store-locator-map .address {
   color: #111111;
 }
-/* line 1133, ../sass/styles.scss */
+/* line 1455, ../sass/styles.scss */
 .google-store-locator-map a.action.directions {
   display: none;
+}
+/* line 1459, ../sass/styles.scss */
+.google-store-locator-map .phone {
+  color: #3760dc;
+}
+/* line 1464, ../sass/styles.scss */
+.google-store-locator-map .web a {
+  color: #daa62c;
+  font-weight: 500;
 }
 
 /*
@@ -1061,32 +1405,50 @@ FIND A DEALER
 CONTACT
 =====================================================================================
 */
-/* line 1144, ../sass/styles.scss */
+/* line 1477, ../sass/styles.scss */
 label {
   font-family: "Roboto Slab", serif;
   padding-bottom: 7px;
   font-size: 20px;
 }
 
-/* line 1150, ../sass/styles.scss */
+/* line 1483, ../sass/styles.scss */
 input {
   height: 30px;
 }
+@media screen and (max-width: 768px) {
+  /* line 1483, ../sass/styles.scss */
+  input {
+    width: 100%;
+  }
+}
 
-/* line 1154, ../sass/styles.scss */
+/* line 1491, ../sass/styles.scss */
+#edit-copy {
+  width: initial !important;
+}
+
+/* line 1495, ../sass/styles.scss */
 .form-type-textarea {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  /* line 1495, ../sass/styles.scss */
+  .form-type-textarea {
+    width: 100%;
+  }
+}
 
-/* line 1158, ../sass/styles.scss */
+/* line 1503, ../sass/styles.scss */
 input#edit-submit {
   background-color: #daa62c !important;
   height: 50px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Roboto Slab", serif;
   padding: 10px 20px;
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 
 /*
@@ -1094,14 +1456,14 @@ input#edit-submit {
 FOOTER
 =====================================================================================
 */
-/* line 1182, ../sass/styles.scss */
+/* line 1528, ../sass/styles.scss */
 #block-views-gallery-block .views-row {
   width: 33.333333%;
   float: left;
   padding: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 1182, ../sass/styles.scss */
+  /* line 1528, ../sass/styles.scss */
   #block-views-gallery-block .views-row {
     width: 50%;
     padding: 5px;
@@ -1113,7 +1475,7 @@ FOOTER
 FOOTER
 =====================================================================================
 */
-/* line 1200, ../sass/styles.scss */
+/* line 1546, ../sass/styles.scss */
 footer {
   width: 100%;
   background-color: #131313;
@@ -1121,7 +1483,7 @@ footer {
   padding: 15px 20px 16px;
   box-sizing: border-box;
 }
-/* line 1207, ../sass/styles.scss */
+/* line 1553, ../sass/styles.scss */
 footer #footer-item-email,
 footer #footer-item-copyright,
 footer #footer-item-siteby {
@@ -1137,7 +1499,7 @@ footer #footer-item-siteby {
   letter-spacing: 1px;
 }
 @media screen and (max-width: 875px) {
-  /* line 1207, ../sass/styles.scss */
+  /* line 1553, ../sass/styles.scss */
   footer #footer-item-email,
   footer #footer-item-copyright,
   footer #footer-item-siteby {
@@ -1145,14 +1507,14 @@ footer #footer-item-siteby {
     line-height: 25px;
   }
 }
-/* line 1226, ../sass/styles.scss */
+/* line 1572, ../sass/styles.scss */
 footer #footer-item-email a,
 footer #footer-item-copyright a,
 footer #footer-item-siteby a {
   color: #daa62c;
   text-decoration: none;
 }
-/* line 1232, ../sass/styles.scss */
+/* line 1578, ../sass/styles.scss */
 footer #footer-item-email,
 footer #footer-item-copyright {
   opacity: 1;
